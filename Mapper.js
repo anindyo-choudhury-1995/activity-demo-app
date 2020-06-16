@@ -36,7 +36,7 @@ class Mapper extends Component {
               name="cars"
               id="cars">
               <option value="">Select Service Request</option>
-              <option value="consumptionService">
+              <option value="consumptionService" selected>
                 Consumption Service
               </option>
               <option value="opportunityPursuit">
@@ -59,7 +59,7 @@ class Mapper extends Component {
               id="cars">
               <option value="">Select Division</option>
               <option value="EMEA">EMEA</option>
-              <option value="Global">Global</option>
+              <option value="Global" selected>Global</option>
               <option value="JAPAC">JAPAC</option>
               <option value="LAD">LAD</option>
               <option value="MYSQL">MYSQL</option>
@@ -86,31 +86,31 @@ class Mapper extends Component {
           </div>
           </div>
           <div className="SecondDiv">
-            <input type="checkbox" name="vehicle1" value="Bike" />
+            <input type="checkbox" name="vehicle1" value="Bike" defaultChecked/>
             <label for="vehicle1"> Day1 onboarding</label>
             <br />
-            <input type="checkbox" name="vehicle2" value="Car" />
+            <input type="checkbox" name="vehicle2" value="Car" defaultChecked/>
             <label for="vehicle2"> Technical Support</label>
             <br />
-            <input type="checkbox" name="vehicle3" value="Boat" />
+            <input type="checkbox" name="vehicle3" value="Boat" defaultChecked/>
             <label for="vehicle3"> Cloud Coaching</label>
             <br />
-            <input type="checkbox" name="vehicle4" value="Boat" />
+            <input type="checkbox" name="vehicle4" value="Boa" />
             <label for="vehicle4"> Opty Pursuit Activity</label>
             <br />
-            <input type="checkbox" name="vehicle5" value="Boat" />
+            <input type="checkbox" name="vehicle5" value="Bo" />
             <label for="vehicle5"> Sales Play Workshop and Discovery</label>
             <br />
-            <input type="checkbox" name="vehicle6" value="Boat" />
+            <input type="checkbox" name="vehicle6" value="B" />
             <label for="vehicle6"> Innovation Day</label>
             <br />
-            <input type="checkbox" name="vehicle7" value="Boat" />
+            <input type="checkbox" name="vehicle7" value="oat" />
             <label for="vehicle7"> Demonstration</label>
             <br />
-            <input type="checkbox" name="vehicle8" value="Boat" />
+            <input type="checkbox" name="vehicle8" value="at" />
             <label for="vehicle8"> Proof of Concept</label>
             <br />
-            <input type="checkbox" name="vehicle9" value="Boat" />
+            <input type="checkbox" name="vehicle9" value="t" />
             <label for="vehicle9"> Solution Proposal</label>
             <br />
             <br />
