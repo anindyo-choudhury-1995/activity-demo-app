@@ -34,12 +34,12 @@ class Home extends Component {
               <div className="ListingItemText">Lookup Tags</div>
             </div>
           </Link>
-          <Link to="/mapper">
+          <Link to="/activity">
             <div className="ListingItem">
               <div className="ListingItemIcon">
                 <div className="CreateServiceRequest" />
               </div>
-              <div className="ListingItemText">Map Activity</div>
+              <div className="ListingItemText"> Activity Mappings</div>
             </div>
           </Link>
         </div>

@@ -18,10 +18,10 @@ class Mapper extends Component {
             <Link to="/mapper">
               <button onClick={this.refreshPage}>Save and Continue</button>
             </Link>
-            <Link to="/">
+            <Link to="/activity">
               <button>Save and Close</button>
             </Link>
-            <Link to="/">
+            <Link to="/activity">
               <button>Cancel</button>
             </Link>
           </div>
@@ -117,7 +117,7 @@ class Mapper extends Component {
           </div>
         </div>
         <div>
-          <table>
+          {/*<table>
             <thead>
               <tr>
                 <th>Service Request</th>
@@ -152,7 +152,7 @@ class Mapper extends Component {
                 </td>
               </tr>
             </tbody>
-          </table>
+          </table>*/}
         </div>
       </div>
     );
