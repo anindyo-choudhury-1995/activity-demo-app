@@ -22,3 +22,16 @@
 .Margin-8-0 {
   margin: 8px 0;
 }
+
+.ActivityHeading {
+    text-align: right;
+    padding-right: 8px;
+    display: flex;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.ActivityItem {
+  display: flex;
+  align-items: center;
+}

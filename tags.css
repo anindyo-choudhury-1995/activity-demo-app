@@ -31,7 +31,9 @@ th {
   background-color:rgba(0, 0, 0, 0);
 border-bottom-color:rgb(214, 223, 230);
 border-bottom-style:solid;
+border-top-style:solid;
 border-bottom-width:1px;
+border-top-width:1px;
 border-collapse:separate;
 border-left-color:rgb(214, 223, 230);
 border-left-width:0px;
@@ -39,7 +41,7 @@ border-right-color:rgba(0, 0, 0, 0);
 border-right-style:solid;
 border-right-width:1px;
 border-top-color:rgb(214, 223, 230);
-border-top-width:0px;
+/* border-top-width:0px; */
 color:rgb(0, 0, 0);
 cursor:url(https://eeho-dev4.fa.us2.oraclecloud.com/crmUI/afr/wk-column-select.cur), default;
 display:table-cell;
