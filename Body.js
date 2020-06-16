@@ -37,11 +37,11 @@ class Body extends Component {
         <Route path="/activity">
           <Activities />
         </Route>
-        <Route path="/">
-          <Home />
-        </Route>
         <Route path="/dashboard">
           <Dashboard />
+        </Route>
+        <Route path="/">
+          <Home />
         </Route>
       </Switch>
       </div>

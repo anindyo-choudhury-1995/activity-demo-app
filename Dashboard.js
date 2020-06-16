@@ -865,7 +865,7 @@ class Dashboard extends Component {
   };
   render() {
     return (
-      <div className="CreateContainer">
+      <div className="DashboardContainer">
         <div className="Heading">
           My Service Requests - Solution Engineering
         </div>
@@ -878,61 +878,25 @@ class Dashboard extends Component {
             <div className="ColumnItems">
               <div className="ColumnItemLeft">Opportunity</div>
               <div className="ColumnItemRight">
-                <select name="cars" id="cars">
-                  <option value="">Select Opportunity</option>
-                  {this.opportunities.map((opportunity, i) => {
-                    return (
-                      <option key={i} value={opportunity.value}>
-                        {opportunity.label}
-                      </option>
-                    );
-                  })}
-                </select>
+                B53XL - L'OREAL
               </div>
             </div>
             <div className="ColumnItems">
               <div className="ColumnItemLeft">Account</div>
               <div className="ColumnItemRight">
-                <select name="cars" id="cars">
-                  <option value="">Select Account</option>
-                  {this.accounts.map((account, i) => {
-                    return (
-                      <option key={i} value={account.value}>
-                        {account.label}
-                      </option>
-                    );
-                  })}
-                </select>
+                LOreal Produits de Luxe International
               </div>
             </div>
             <div className="ColumnItems">
               <div className="ColumnItemLeft">Country</div>
               <div className="ColumnItemRight">
-                <select name="cars" id="cars">
-                  <option value="">Select Country</option>
-                  {this.countries.map((country, i) => {
-                    return (
-                      <option key={i} value={country.value}>
-                        {country.label}
-                      </option>
-                    );
-                  })}
-                </select>
+                United States
               </div>
             </div>
             <div className="ColumnItems">
               <div className="ColumnItemLeft">Language Of Delivery</div>
               <div className="ColumnItemRight">
-                <select name="cars" id="cars">
-                  <option value="">Select Language</option>
-                  {this.languages.map((language, i) => {
-                    return (
-                      <option key={i} value={language.value}>
-                        {language.label}
-                      </option>
-                    );
-                  })}
-                </select>
+                English
               </div>
             </div>
           </div>
@@ -940,58 +904,25 @@ class Dashboard extends Component {
             <div className="ColumnItems">
               <div className="ColumnItemLeft">Customer Deadline*</div>
               <div className="ColumnItemRight">
-                <input className="CustomerDeadline" type="date" />
+                07/17/2020
               </div>
             </div>
             <div className="ColumnItems">
               <div className="ColumnItemLeft">Primary Pillar*</div>
               <div className="ColumnItemRight">
-                <select name="cars" id="cars">
-                  <option value="">Select Primary Pillar</option>
-                  {this.pillars.map((pillar, i) => {
-                    return (
-                      <option key={i} value={pillar.value}>
-                        {pillar.label}
-                      </option>
-                    );
-                  })}
-                </select>
+                SaaS - Services Automation - Pillar
               </div>
             </div>
             <div className="ColumnItems">
               <div className="ColumnItemLeft">Additional Pillar</div>
               <div className="ColumnItemRight">
-                <select name="cars" id="cars">
-                  <option value="">Select Additional Pillar</option>
-                  {this.pillars.map((pillar, i) => {
-                    return (
-                      <option key={i} value={pillar.value}>
-                        {pillar.label}
-                      </option>
-                    );
-                  })}
-                </select>
+                SaaS - Sales Automation - Pillar
               </div>
             </div>
             <div className="ColumnItems">
               <div className="ColumnItemLeft">Platform</div>
               <div className="ColumnItemRight">
-                <select name="cars" id="cars">
-                  <option value="">Select Platform</option>
-                  {this.platforms.map((platform, i) => {
-                    return (
-                      <option key={i} value={platform.value}>
-                        {platform.label}
-                      </option>
-                    );
-                  })}
-                </select>
-              </div>
-            </div>
-            <div className="ColumnItems">
-              <div className="ColumnItemLeft">Attachments</div>
-              <div className="ColumnItemRight">
-                <button className="CreateButton">Add/View</button>
+                SaaS - Cloud Tech Ops
               </div>
             </div>
           </div>
@@ -1001,7 +932,7 @@ class Dashboard extends Component {
             <b>Description*</b>
           </div>
           <div className="DescriptionTextarea">
-            <textarea />
+            Description about the service request
           </div>
         </div>
         <div className="ServicesBox">
