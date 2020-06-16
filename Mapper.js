@@ -4,7 +4,7 @@ import "./mapper.css";
 
 class Mapper extends Component {
   state = {
-    region: ["APAC", "EMEA", "LAD", "ANTARCTICA", "NAS", "JAPAN"]
+    activities: []
   };
   refreshPage = event => {
     window.location.reload();
@@ -35,9 +35,10 @@ class Mapper extends Component {
                   className="ItemsSecondInput  Margin-8-08"
                   name="cars"
                   id="cars"
+                  defaultValue="consumptionService"
                 >
                   <option value="">Select Service Request</option>
-                  <option value="consumptionService" selected>
+                  <option value="consumptionService">
                     Consumption Service
                   </option>
                   <option value="opportunityPursuit">
@@ -58,10 +59,11 @@ class Mapper extends Component {
                   className="ItemsSecondInput  Margin-8-0"
                   name="cars"
                   id="cars"
+                  defaultValue="Global"
                 >
                   <option value="">Select Division</option>
                   <option value="EMEA">EMEA</option>
-                  <option value="Global" selected>
+                  <option value="Global">
                     Global
                   </option>
                   <option value="JAPAC">JAPAC</option>
@@ -93,6 +95,9 @@ class Mapper extends Component {
             <div className="Items Width-300">
               <div className="ActivityHeading">Activities</div>
               <div>
+                
+              </div>
+              {/*<div>
                 <div className="ActivityItem">
                   <input
                     type="checkbox"
@@ -147,47 +152,11 @@ class Mapper extends Component {
                   <input type="checkbox" name="vehicle9" value="t" />
                   <label htmlFor="vehicle9"> Solution Proposal</label>
                 </div>
-              </div>
+              </div>*/}
             </div>
           </div>
         </div>
         <div>
-          {/*<table>
-            <thead>
-              <tr>
-                <th>Service Request</th>
-                <th>Division</th>
-                <th>Activity(ies)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Consumption Service</td>
-                <td>Global</td>
-                <td>
-                Day1 onboarding <br /><br />
-                Technical Support <br /><br />
-                Cloud Coaching
-                </td>
-              </tr>
-              <tr>
-                <td>Opportunity Pursuit</td>
-                <td>Global</td>
-                <td>Opty Pursuit Activity</td>
-              </tr>
-              <tr>
-                <td>Expansion/Renewal Services</td>
-                <td>Global</td>
-                <td>
-                  Sales Play Workshop and Discovery<br /><br />
-                  Innovation Day<br /><br />
-                  Demonstration<br /><br />
-                  Proof of Concept<br /><br />
-                  Solution Proposal<br /><br />
-                </td>
-              </tr>
-            </tbody>
-          </table>*/}
         </div>
       </div>
     );
