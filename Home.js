@@ -37,7 +37,7 @@ class Home extends Component {
           <Link to="/mapper">
             <div className="ListingItem">
               <div className="ListingItemIcon">
-                <div className="Mapper" />
+                <div className="CreateServiceRequest" />
               </div>
               <div className="ListingItemText">Map Activity</div>
             </div>

@@ -6,9 +6,9 @@ class Mapper extends Component {
   state = {
     region: ["APAC", "EMEA", "LAD", "ANTARCTICA", "NAS", "JAPAN"]
   };
-  refreshPage = (event) => {
-    window.location.reload()
-  }
+  refreshPage = event => {
+    window.location.reload();
+  };
   render() {
     return (
       <div className="MapperContainer">
@@ -16,7 +16,7 @@ class Mapper extends Component {
           <div className="Create">Map Activity to Service Request</div>
           <div>
             <Link to="/mapper">
-              <button onClick={ this.refreshPage }>Save and Continue</button>
+              <button onClick={this.refreshPage}>Save and Continue</button>
             </Link>
             <Link to="/">
               <button>Save and Close</button>
@@ -28,9 +28,36 @@ class Mapper extends Component {
         </div>
         <div className="TwoDivs MarginTop-48">
           <div className="FirstDiv">
-            <div>Region</div>
-            <select className="ItemsSecondInput  Margin-8-0" name="cars" id="cars">
-              <option value="">Select Region</option>
+          <div className="Items">
+            <div className="ItemsFirst">Service Request</div>
+            <div>
+            <select
+              className="ItemsSecondInput  Margin-8-08"
+              name="cars"
+              id="cars">
+              <option value="">Select Service Request</option>
+              <option value="consumptionService">
+                Consumption Service
+              </option>
+              <option value="opportunityPursuit">
+                Opportunity Pursuit
+              </option>
+              <option value="expansionRenewalServices">
+                Expansion/Renewal Services
+              </option>
+            </select>
+            </div>
+          </div>
+            <br />
+            <br />
+          <div className="Items">
+            <div className="ItemsFirst">Division</div>
+            <div>
+            <select
+              className="ItemsSecondInput  Margin-8-0"
+              name="cars"
+              id="cars">
+              <option value="">Select Division</option>
               <option value="EMEA">EMEA</option>
               <option value="Global">Global</option>
               <option value="JAPAC">JAPAC</option>
@@ -55,21 +82,8 @@ class Mapper extends Component {
               <option value="APAC">APAC</option>
               <option value="NAS">NAS</option>*/}
             </select>
-            <br />
-            <br />
-            <div>Service Request</div>
-            <select className="ItemsSecondInput  Margin-8-08" name="cars" id="cars">
-              <option value="">Select Service Request</option>
-              <option value="consumptionService">
-                Consumption Service-9V8CD-Nationwide Mutual Insurance Company
-              </option>
-              <option value="opportunityPursuit">
-                Opportunity Pursuit-106977-IBM
-              </option>
-              <option value="expansionRenewalServices">
-                Expansion/Renewal Services-95913-Replacement Parts
-              </option>
-            </select>
+            </div>
+          </div>
           </div>
           <div className="SecondDiv">
             <input type="checkbox" name="vehicle1" value="Bike" />
@@ -101,6 +115,74 @@ class Mapper extends Component {
             <br />
             <br />
           </div>
+        </div>
+        <div>
+          <table>
+            <thead>
+              <tr rowSpan="3">
+                <th>Sl. No.</th>
+                <th>Service Request</th>
+                <th>Division</th>
+                <th>Activity(ies)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr rowSpan="3">
+                <td>1</td>
+                <td>Consumption Service</td>
+                <td>Global</td>
+                <td>Day1 onboarding</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Technical Support</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Cloud Coaching</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Opportunity Pursuit</td>
+                <td>Global</td>
+                <td>Opty Pursuit Activity</td>
+              </tr>
+              <tr rowSpan="5">
+                <td>3</td>
+                <td>Expansion/Renewal Services</td>
+                <td>Global</td>
+                <td>Sales Play Workshop and Discovery</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Innovation Day</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Demonstration</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Proof of Concept</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Solution Proposal</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     );

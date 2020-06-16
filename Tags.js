@@ -127,8 +127,10 @@ class Tags extends Component {
                 ACTIVITY
               </td>
               <td>
+              Sales Play Workshop and Discovery
               </td>
               <td>
+              Sales Play Workshop and Discovery
               </td>
               <td>
                 5/15/2020
