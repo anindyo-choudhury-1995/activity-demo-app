@@ -88,31 +88,31 @@ class Mapper extends Component {
           <div className="SecondDiv">
             <div className="ItemsFirst">Activities</div>
             <input type="checkbox" name="vehicle1" value="Bike" defaultChecked/>
-            <label for="vehicle1"> Day1 onboarding</label>
+            <label htmlFor="vehicle1"> Day1 onboarding</label>
             <br />
             <input type="checkbox" name="vehicle2" value="Car" defaultChecked/>
-            <label for="vehicle2"> Technical Support</label>
+            <label htmlFor="vehicle2"> Technical Support</label>
             <br />
             <input type="checkbox" name="vehicle3" value="Boat" defaultChecked/>
-            <label for="vehicle3"> Cloud Coaching</label>
+            <label htmlFor="vehicle3"> Cloud Coaching</label>
             <br />
             <input type="checkbox" name="vehicle4" value="Boa" />
-            <label for="vehicle4"> Opty Pursuit Activity</label>
+            <label htmlFor="vehicle4"> Opty Pursuit Activity</label>
             <br />
             <input type="checkbox" name="vehicle5" value="Bo" />
-            <label for="vehicle5"> Sales Play Workshop and Discovery</label>
+            <label htmlFor="vehicle5"> Sales Play Workshop and Discovery</label>
             <br />
             <input type="checkbox" name="vehicle6" value="B" />
-            <label for="vehicle6"> Innovation Day</label>
+            <label htmlFor="vehicle6"> Innovation Day</label>
             <br />
             <input type="checkbox" name="vehicle7" value="oat" />
-            <label for="vehicle7"> Demonstration</label>
+            <label htmlFor="vehicle7"> Demonstration</label>
             <br />
             <input type="checkbox" name="vehicle8" value="at" />
-            <label for="vehicle8"> Proof of Concept</label>
+            <label htmlFor="vehicle8"> Proof of Concept</label>
             <br />
             <input type="checkbox" name="vehicle9" value="t" />
-            <label for="vehicle9"> Solution Proposal</label>
+            <label htmlFor="vehicle9"> Solution Proposal</label>
             <br />
             <br />
           </div>
