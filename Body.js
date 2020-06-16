@@ -6,6 +6,7 @@ import Time from './Time'
 import Tags from './Tags'
 import Createtag from './Createtag'
 import Activities from './Activities'
+import Dashboard from './Dashboard'
 import {
   BrowserRouter as Router,
   Switch,
@@ -38,6 +39,9 @@ class Body extends Component {
         </Route>
         <Route path="/">
           <Home />
+        </Route>
+        <Route path="/dashboard">
+          <Dashboard />
         </Route>
       </Switch>
       </div>
