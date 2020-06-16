@@ -1,0 +1,226 @@
+.CreateContainer {
+  height: calc(100% - 32px);
+  background: white;
+  padding: 16px;
+  color: #312d2a;
+  overflow:auto;
+  font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.Heading {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #312d2a;
+    display: block;
+    font-size: 20px;
+    font-weight: normal;
+    padding-bottom: 16px;
+}
+
+.ActionBar {
+  display: flex;
+  justify-content: flex-end;
+  position: -webkit-sticky;
+    position: sticky;
+    top: -16px;
+    background: white;
+    z-index: 1000;
+}
+
+.TwoColumns {
+  padding: 16px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.Columns {
+  width: 40%;
+  min-width: 300px;
+  padding: 0 16px;
+}
+
+.ColumnItems {
+  display: flex;
+  justify-content: space-between;
+      padding: 4px;
+    align-items: center;
+}
+
+.ColumnItemLeft {
+width: calc(50% - 4px);
+text-align: right;
+color:rgb(79, 79, 79);
+cursor:default;
+display:inline;
+font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size:12px;
+font-weight:700;
+text-size-adjust:100%;
+line-height: 21px;
+}
+
+.ColumnItemRight {
+  width : calc(50% - 4px);
+  
+}
+
+select {
+  align-items:center;
+background-color:rgb(252, 252, 253);
+border-bottom-color:rgb(229, 230, 230);
+border-bottom-left-radius:2px;
+border-bottom-right-radius:2px;
+border-bottom-style:solid;
+border-bottom-width:1px;
+border-left-color:rgb(229, 230, 230);
+border-left-style:solid;
+border-left-width:1px;
+border-right-color:rgb(229, 230, 230);
+border-right-style:solid;
+border-right-width:1px;
+border-top-color:rgb(229, 230, 230);
+border-top-left-radius:2px;
+border-top-right-radius:2px;
+border-top-style:solid;
+border-top-width:1px;
+box-sizing:border-box;
+color:rgba(0, 0, 0, 0.8);
+display:flex;
+flex-direction:row;
+font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size:14px;
+height:31.9844px;
+overflow-x:hidden;
+overflow-y:hidden;
+position:relative;
+text-size-adjust:100%;
+width:160px;
+}
+
+.CustomerDeadline {
+  width:154px;
+}
+
+
+.DescriptionBox {
+  display: flex;
+  align-items: center;
+}
+
+.DescriptionTextarea {
+  width: 100%;
+    padding: 0 8px;
+}
+
+.DescriptionTextarea > textarea {
+  width: 100%;
+  height: 64px;
+}
+
+.ServiceListing {
+  display: flex;
+    flex-direction: column;
+    padding-top: 8px;
+}
+
+.ServiceItem {
+  position: relative;
+    border: 1px solid #0000001c;
+    border-radius: 10px;
+    box-shadow: 3px 2px 7px 1px #0000001c;
+    padding: 1%;
+    background: #8884812b;
+    margin: 8px 0;
+}
+
+.ChangeServiceBox {
+  text-align: -webkit-right;
+}
+
+.QuestionAnswers {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8px 8px 16px 8px;
+
+}
+
+.Question {
+  width: 50%;
+  min-width: 300px;
+}
+
+.Answer {
+  width: 50%;
+  min-width: 300px;
+}
+
+.Answer > textarea {
+  width: 100%;
+}
+
+.CreateButton {
+  padding: 4px 8px;
+    margin: 2px 4px;
+  align-items:center;
+background-color:rgb(37, 84, 57);
+background-image:none;
+border-bottom-color:rgb(37, 84, 57);
+border-bottom-left-radius:5px;
+border-bottom-right-radius:5px;
+border-bottom-style:solid;
+border-bottom-width:1px;
+border-image-outset:0;
+border-image-repeat:stretch;
+border-image-slice:100%;
+border-image-source:none;
+border-image-width:1;
+border-left-color:rgb(37, 84, 57);
+border-left-style:solid;
+border-left-width:1px;
+border-right-color:rgb(37, 84, 57);
+border-right-style:solid;
+border-right-width:1px;
+border-top-color:rgb(37, 84, 57);
+border-top-left-radius:5px;
+border-top-right-radius:5px;
+border-top-style:solid;
+border-top-width:1px;
+box-shadow:none;
+box-sizing:border-box;
+color:rgb(255, 255, 255);
+cursor:default;
+display:block;
+font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size:14px;
+font-stretch:100%;
+font-style:normal;
+font-variant-caps:normal;
+font-variant-east-asian:normal;
+font-variant-ligatures:normal;
+font-variant-numeric:normal;
+font-weight:700;
+justify-content:center;
+letter-spacing:normal;
+line-height:normal;
+overflow-x:hidden;
+overflow-y:hidden;
+text-align:center;
+text-decoration-color:rgb(255, 255, 255);
+text-decoration-line:none;
+text-decoration-style:solid;
+text-indent:0px;
+text-rendering:auto;
+text-shadow:none;
+text-size-adjust:100%;
+text-transform:none;
+white-space:nowrap;
+word-spacing:0px;
+writing-mode:horizontal-tb;
+-webkit-appearance:none;
+-webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+-webkit-border-image:none;
+}

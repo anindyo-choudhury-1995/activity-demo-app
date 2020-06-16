@@ -1,0 +1,22 @@
+.MapperContainer {
+  height: calc(100% - 32px);
+  background: white;
+  padding: 16px;
+  color: #312d2a;
+  overflow:auto;
+  font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.TwoDivs {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.MarginTop-48 {
+  margin-top: 48px;
+}
+
+.Margin-8-0 {
+  margin: 8px 0;
+}
