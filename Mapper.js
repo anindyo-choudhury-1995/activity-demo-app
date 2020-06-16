@@ -119,57 +119,37 @@ class Mapper extends Component {
         <div>
           <table>
             <thead>
-              <tr rowSpan="3">
+              <tr>
                 <th>Service Request</th>
                 <th>Division</th>
                 <th>Activity(ies)</th>
               </tr>
             </thead>
             <tbody>
-              <tr rowSpan="3">
+              <tr>
                 <td>Consumption Service</td>
                 <td>Global</td>
-                <td>Day1 onboarding</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td>Technical Support</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td>Cloud Coaching</td>
+                <td>
+                Day1 onboarding <br /><br />
+                Technical Support <br /><br />
+                Cloud Coaching
+                </td>
               </tr>
               <tr>
                 <td>Opportunity Pursuit</td>
                 <td>Global</td>
                 <td>Opty Pursuit Activity</td>
               </tr>
-              <tr rowSpan="5">
+              <tr>
                 <td>Expansion/Renewal Services</td>
                 <td>Global</td>
-                <td>Sales Play Workshop and Discovery</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td>Innovation Day</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td>Demonstration</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td>Proof of Concept</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td>Solution Proposal</td>
+                <td>
+                  Sales Play Workshop and Discovery<br /><br />
+                  Innovation Day<br /><br />
+                  Demonstration<br /><br />
+                  Proof of Concept<br /><br />
+                  Solution Proposal<br /><br />
+                </td>
               </tr>
             </tbody>
           </table>
