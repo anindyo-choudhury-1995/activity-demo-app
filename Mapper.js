@@ -86,6 +86,7 @@ class Mapper extends Component {
           </div>
           </div>
           <div className="SecondDiv">
+            <div className="ItemsFirst">Activities</div>
             <input type="checkbox" name="vehicle1" value="Bike" defaultChecked/>
             <label for="vehicle1"> Day1 onboarding</label>
             <br />

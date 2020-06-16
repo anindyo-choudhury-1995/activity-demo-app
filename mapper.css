@@ -5,6 +5,8 @@
   color: #312d2a;
   overflow:auto;
   font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+    font-weight: 400;
 }
 
 .TwoDivs {
