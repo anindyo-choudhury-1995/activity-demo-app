@@ -120,7 +120,6 @@ class Mapper extends Component {
           <table>
             <thead>
               <tr rowSpan="3">
-                <th>Sl. No.</th>
                 <th>Service Request</th>
                 <th>Division</th>
                 <th>Activity(ies)</th>
@@ -128,7 +127,6 @@ class Mapper extends Component {
             </thead>
             <tbody>
               <tr rowSpan="3">
-                <td>1</td>
                 <td>Consumption Service</td>
                 <td>Global</td>
                 <td>Day1 onboarding</td>
@@ -136,23 +134,19 @@ class Mapper extends Component {
               <tr>
                 <td></td>
                 <td></td>
-                <td></td>
                 <td>Technical Support</td>
               </tr>
               <tr>
                 <td></td>
                 <td></td>
-                <td></td>
                 <td>Cloud Coaching</td>
               </tr>
               <tr>
-                <td>2</td>
                 <td>Opportunity Pursuit</td>
                 <td>Global</td>
                 <td>Opty Pursuit Activity</td>
               </tr>
               <tr rowSpan="5">
-                <td>3</td>
                 <td>Expansion/Renewal Services</td>
                 <td>Global</td>
                 <td>Sales Play Workshop and Discovery</td>
@@ -160,11 +154,9 @@ class Mapper extends Component {
               <tr>
                 <td></td>
                 <td></td>
-                <td></td>
                 <td>Innovation Day</td>
               </tr>
               <tr>
-                <td></td>
                 <td></td>
                 <td></td>
                 <td>Demonstration</td>
@@ -172,11 +164,9 @@ class Mapper extends Component {
               <tr>
                 <td></td>
                 <td></td>
-                <td></td>
                 <td>Proof of Concept</td>
               </tr>
               <tr>
-                <td></td>
                 <td></td>
                 <td></td>
                 <td>Solution Proposal</td>
