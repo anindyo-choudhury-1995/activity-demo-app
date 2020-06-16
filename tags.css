@@ -7,7 +7,7 @@
   font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-th {
+/* th {
   text-align: left;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     border-bottom: 1px solid #979991;
@@ -25,8 +25,45 @@ th {
     padding-top: 8px;
     padding-bottom: 8px;
     border-right: 1px solid transparent;
+} */
+
+th {
+  background-color:rgba(0, 0, 0, 0);
+border-bottom-color:rgb(214, 223, 230);
+border-bottom-style:solid;
+border-bottom-width:1px;
+border-collapse:separate;
+border-left-color:rgb(214, 223, 230);
+border-left-width:0px;
+border-right-color:rgba(0, 0, 0, 0);
+border-right-style:solid;
+border-right-width:1px;
+border-top-color:rgb(214, 223, 230);
+border-top-width:0px;
+color:rgb(0, 0, 0);
+cursor:url(https://eeho-dev4.fa.us2.oraclecloud.com/crmUI/afr/wk-column-select.cur), default;
+display:table-cell;
+font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size:13px;
+font-weight:700;
+height:48px;
+overflow-x:hidden;
+overflow-y:hidden;
+padding-bottom:8px;
+padding-left:5px;
+padding-right:5px;
+padding-top:8px;
+text-align:-webkit-left;
+text-overflow:ellipsis;
+text-size-adjust:100%;
+vertical-align:middle;
+width:237px;
+-webkit-border-horizontal-spacing:0px;
+-webkit-border-vertical-spacing:0px;
+-webkit-tap-highlight-color:rgba(0, 0, 0, 0);
 }
 
+/* 
 td {
   font-weight: normal;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -44,4 +81,41 @@ td {
     height: 28px;
     margin: 0px;
     -webkit-appearance: none;
+} */
+
+td {
+  background-color:rgb(255, 255, 255);
+border-bottom-color:rgb(238, 238, 238);
+border-bottom-style:solid;
+border-bottom-width:1px;
+border-collapse:separate;
+border-left-color:rgb(238, 238, 238);
+border-left-width:0px;
+border-right-color:rgba(0, 0, 0, 0);
+border-right-style:solid;
+border-right-width:1px;
+border-top-color:rgb(238, 238, 238);
+border-top-width:0px;
+color:rgb(51, 51, 51);
+display:table-cell;
+font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size:12px;
+font-weight:400;
+height:14.8906px;
+overflow-x:hidden;
+overflow-y:hidden;
+padding-bottom:8px;
+padding-left:5px;
+padding-right:5px;
+padding-top:8px;
+text-align:-webkit-left;
+text-overflow:ellipsis;
+text-size-adjust:100%;
+vertical-align:middle;
+white-space:normal;
+width:100px;
+-webkit-border-horizontal-spacing:0px;
+-webkit-border-vertical-spacing:0px;
+-webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+
 }
