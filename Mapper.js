@@ -90,7 +90,7 @@ class Mapper extends Component {
             </div>
           </div>
           <div className="SecondDiv">
-            <div className="Items">
+            <div className="Items Width-300">
               <div className="ActivityHeading">Activities</div>
               <div>
                 <div className="ActivityItem">
