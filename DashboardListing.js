@@ -18,7 +18,7 @@ class DashboardListing extends Component {
           </div>
         </div>
         <br />
-        <Link to="/dashboard">
+        
         <table>
           <thead>
             <tr>
@@ -32,6 +32,7 @@ class DashboardListing extends Component {
               <th>Service Status</th>
               <th>Last Updated Date</th>
               <th>Reported Hours</th>
+              <th>Action</th>
             </tr>
           </thead>
           <tbody>
@@ -46,6 +47,11 @@ class DashboardListing extends Component {
               <td>New</td>
               <td>6/17/2020</td>
               <td>10</td>
+              <td>
+                <Link to="/dashboard">
+                  <button className="RedWoodButton">Details</button>
+                </Link>
+              </td>
             </tr>
             <tr>
               <td>5/14/2020</td>
@@ -85,7 +91,6 @@ class DashboardListing extends Component {
             </tr>
           </tbody>
         </table>
-        </Link>
       </div>
     );
   }
