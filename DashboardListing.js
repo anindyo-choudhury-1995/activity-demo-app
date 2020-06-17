@@ -64,6 +64,11 @@ class DashboardListing extends Component {
               <td>New</td>
               <td>6/17/2020</td>
               <td>3</td>
+              <td>
+                <Link to="/dashboard">
+                  <button className="RedWoodButton">Details</button>
+                </Link>
+              </td>
             </tr>
             <tr>
               <td>5/14/2020</td>
@@ -76,6 +81,11 @@ class DashboardListing extends Component {
               <td>New</td>
               <td>6/17/2020</td>
               <td>5</td>
+              <td>
+                <Link to="/dashboard">
+                  <button className="RedWoodButton">Details</button>
+                </Link>
+              </td>
             </tr>
             <tr>
               <td>5/14/2020</td>
@@ -88,6 +98,11 @@ class DashboardListing extends Component {
               <td>New</td>
               <td>6/17/2020</td>
               <td>2</td>
+              <td>
+                <Link to="/dashboard">
+                  <button className="RedWoodButton">Details</button>
+                </Link>
+              </td>
             </tr>
           </tbody>
         </table>

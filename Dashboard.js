@@ -85,7 +85,7 @@ class Dashboard extends Component {
                 <br /> One or many customer workshop or event focused on
                 highlighting compelling and differentiated positioning of Oracle
                 Solution and Capabilities. <br />
-                <div class="color-green">10 hr(s)</div>
+                <div className="color-green">10 hr(s)</div>
               </div>
             ) : (
               ""
@@ -98,7 +98,7 @@ class Dashboard extends Component {
                 <b>Consumption Service </b>
                 <br /> Service focused on enhancing the consumption of our
                 service offerings. <br />
-                <div class="color-green">3 hr(s)</div>
+                <div className="color-green">3 hr(s)</div>
               </div>
             ) : (
               ""
@@ -111,7 +111,7 @@ class Dashboard extends Component {
                 <b>Opportunity Pursuit </b>
                 <br /> Service which helps in winning the current opportunity.{" "}
                 <br />
-                <div class="color-green">5 hr(s)</div>
+                <div className="color-green">5 hr(s)</div>
               </div>
             ) : (
               ""
@@ -124,7 +124,7 @@ class Dashboard extends Component {
                 <b>Expansion/Renewal Services </b>
                 <br /> Service which is focused on Expansion of the services
                 provided, or Renewal of our service offerings. <br />
-                <div class="color-green">2 hr(s)</div>
+                <div className="color-green">2 hr(s)</div>
               </div>
             ) : (
               ""
@@ -150,7 +150,7 @@ class Dashboard extends Component {
                   <b>Consumption Service </b>
                   <br /> Service focused on enhancing the consumption of our
                   service offerings. <br />
-                  <div class="color-green">3 hr(s)</div>
+                  <div className="color-green">3 hr(s)</div>
                 </div>
                 <div
                   className="ServiceItem"
@@ -158,7 +158,7 @@ class Dashboard extends Component {
                   <b>Opportunity Pursuit </b>
                   <br /> Service which helps in winning the current opportunity.{" "}
                   <br />
-                  <div class="color-green">5 hr(s)</div>
+                  <div className="color-green">5 hr(s)</div>
                 </div>
                 <div
                   className="ServiceItem"
@@ -166,7 +166,7 @@ class Dashboard extends Component {
                   <b>Expansion/Renewal Services </b>
                   <br /> Service which is focused on Expansion of the services
                   provided, or Renewal of our service offerings. <br />
-                  <div class="color-green">2 hr(s)</div>
+                  <div className="color-green">2 hr(s)</div>
                 </div>
               </div>
             </div>
@@ -217,7 +217,7 @@ class Dashboard extends Component {
                   <b>Consumption Service </b>
                   <br /> Service focused on enhancing the consumption of our
                   service offerings. <br />
-                  <div class="color-green">3 hr(s)</div>
+                  <div className="color-green">3 hr(s)</div>
                 </div>
                 <div
                   className="ServiceItem"
@@ -225,7 +225,7 @@ class Dashboard extends Component {
                   <b>Expansion/Renewal Services </b>
                   <br /> Service which is focused on Expansion of the services
                   provided, or Renewal of our service offerings. <br />
-                  <div class="color-green">2 hr(s)</div>
+                  <div className="color-green">2 hr(s)</div>
                 </div>
               </div>
             </div>
