@@ -67,6 +67,10 @@ class Dashboard extends Component {
               <div className="ColumnItemLeft">Platform</div>
               <div className="ColumnItemRight">SaaS - Cloud Tech Ops</div>
             </div>
+            <div className="ColumnItems">
+              <div className="ColumnItemLeft">Reported Hours</div>
+              <div className="ColumnItemRight"><div className="color-green">10 hr(s)</div></div>
+            </div>
           </div>
         </div>
         <div className="DescriptionBox">
@@ -82,24 +86,9 @@ class Dashboard extends Component {
             <b>Internal Services</b>
           </div>
           <div className="ServiceListing">
-            {this.state.questionNum == 0 || this.state.questionNum == 1 ? (
-              <div
-                className="ServiceItem"
-                onClick={this.showQuestions.bind(this, 1)}
-              >
-                <b>Customer Workshop or Cloud Day </b>
-                <br /> One or many customer workshop or event focused on
-                highlighting compelling and differentiated positioning of Oracle
-                Solution and Capabilities. <br />
-                <div className="color-green">10 hr(s)</div>
-              </div>
-            ) : (
-              ""
-            )}
             {this.state.questionNum == 0 || this.state.questionNum == 2 ? (
               <div
                 className="ServiceItem"
-                onClick={this.showQuestions.bind(this, 2)}
               >
                 <b>Consumption Service </b>
                 <br /> Service focused on enhancing the consumption of our
@@ -112,7 +101,6 @@ class Dashboard extends Component {
             {this.state.questionNum == 0 || this.state.questionNum == 3 ? (
               <div
                 className="ServiceItem"
-                onClick={this.showQuestions.bind(this, 3)}
               >
                 <b>Opportunity Pursuit </b>
                 <br /> Service which helps in winning the current opportunity.{" "}
@@ -125,7 +113,6 @@ class Dashboard extends Component {
             {this.state.questionNum == 0 || this.state.questionNum == 4 ? (
               <div
                 className="ServiceItem"
-                onClick={this.showQuestions.bind(this, 4)}
               >
                 <b>Expansion/Renewal Services </b>
                 <br /> Service which is focused on Expansion of the services
