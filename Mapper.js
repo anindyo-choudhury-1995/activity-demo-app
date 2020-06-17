@@ -87,8 +87,8 @@ class Mapper extends Component {
           <div className="SecondDiv">
             <div className="Width-300">
               <div className="ActivityHeading AddActivityHeading">
-                <span>Activities </span> 
-                <input list="browsers" name="browser" id="browser" />
+                <div>Activities </div> 
+                <input className="ActivityInput" list="browsers" name="browser" id="browser" />
                 <datalist id="browsers">
                   <option value="">Select Division</option>
                   <option value="Day1 Onboarding">Day1 Onboarding</option>

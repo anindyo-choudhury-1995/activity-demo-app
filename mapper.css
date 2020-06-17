@@ -46,14 +46,19 @@
   align-items: center;
 }
 
+.ActivityInput {
+  margin-left: 8px;
+}
+
 .chip {
   display: inline-block;
   padding: 0 25px;
-  height: 50px;
-  font-size: 18px;
-  line-height: 50px;
+  height: 32px;
+  font-size: 12px;
+  line-height: 32px;
   border-radius: 25px;
   background-color: #f1f1f1;
+  margin: 8px;
 }
 
 .closebtn {
@@ -61,7 +66,7 @@
   color: #888;
   font-weight: bold;
   float: right;
-  font-size: 20px;
+  font-size: 12px;
   cursor: pointer;
 }
 
