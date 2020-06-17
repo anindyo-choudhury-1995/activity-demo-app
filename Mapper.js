@@ -85,7 +85,7 @@ class Mapper extends Component {
             </div>
           </div>
           <div className="SecondDiv">
-            <div className="Width-300">
+            <div className="MinWidth-300">
               <div className="ActivityHeading AddActivityHeading">
                 <div>Activities </div> 
                 <input className="ActivityInput" list="browsers" name="browser" id="browser" />

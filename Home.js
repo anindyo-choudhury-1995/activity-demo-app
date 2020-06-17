@@ -18,6 +18,14 @@ class Home extends Component {
               <div className="ListingItemText">Create Service Request</div>
             </div>
           </Link>*/}
+          <Link to="/dashboard">
+            <div className="ListingItem">
+              <div className="ListingItemIcon">
+                <div className="CreateServiceRequest" />
+              </div>
+              <div className="ListingItemText"> Dashboard</div>
+            </div>
+          </Link>
           <Link to="/time">
             <div className="ListingItem">
               <div className="ListingItemIcon">
@@ -40,14 +48,6 @@ class Home extends Component {
                 <div className="CreateServiceRequest" />
               </div>
               <div className="ListingItemText"> Activity Mappings</div>
-            </div>
-          </Link>
-          <Link to="/dashboard">
-            <div className="ListingItem">
-              <div className="ListingItemIcon">
-                <div className="CreateServiceRequest" />
-              </div>
-              <div className="ListingItemText"> Dashboard</div>
             </div>
           </Link>
         </div>

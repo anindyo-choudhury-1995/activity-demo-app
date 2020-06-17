@@ -27,6 +27,10 @@
   width: 300px;
 }
 
+.MinWidth-300 {
+  min-width: 300px;
+}
+
 .ActivityHeading {
     text-align: right;
     padding-right: 8px;
