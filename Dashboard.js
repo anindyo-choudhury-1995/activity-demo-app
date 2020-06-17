@@ -12,9 +12,7 @@ class Dashboard extends Component {
   render() {
     return (
       <div className="DashboardContainer">
-        <div className="Heading">
-          Dashboard
-        </div>
+        <div className="Heading">Dashboard</div>
         <div className="ActionBar">
           <button className="CreateButton">Back</button>
         </div>
@@ -22,9 +20,7 @@ class Dashboard extends Component {
           <div className="Columns">
             <div className="ColumnItems">
               <div className="ColumnItemLeft">Opportunity</div>
-              <div className="ColumnItemRight">
-                B53XL - L'OREAL
-              </div>
+              <div className="ColumnItemRight">B53XL - L'OREAL</div>
             </div>
             <div className="ColumnItems">
               <div className="ColumnItemLeft">Account</div>
@@ -34,23 +30,17 @@ class Dashboard extends Component {
             </div>
             <div className="ColumnItems">
               <div className="ColumnItemLeft">Country</div>
-              <div className="ColumnItemRight">
-                United States
-              </div>
+              <div className="ColumnItemRight">United States</div>
             </div>
             <div className="ColumnItems">
               <div className="ColumnItemLeft">Language Of Delivery</div>
-              <div className="ColumnItemRight">
-                English
-              </div>
+              <div className="ColumnItemRight">English</div>
             </div>
           </div>
           <div className="Columns">
             <div className="ColumnItems">
               <div className="ColumnItemLeft">Customer Deadline*</div>
-              <div className="ColumnItemRight">
-                07/17/2020
-              </div>
+              <div className="ColumnItemRight">07/17/2020</div>
             </div>
             <div className="ColumnItems">
               <div className="ColumnItemLeft">Primary Pillar*</div>
@@ -66,9 +56,7 @@ class Dashboard extends Component {
             </div>
             <div className="ColumnItems">
               <div className="ColumnItemLeft">Platform</div>
-              <div className="ColumnItemRight">
-                SaaS - Cloud Tech Ops
-              </div>
+              <div className="ColumnItemRight">SaaS - Cloud Tech Ops</div>
             </div>
           </div>
         </div>
@@ -90,9 +78,11 @@ class Dashboard extends Component {
                 className="ServiceItem"
                 onClick={this.showQuestions.bind(this, 1)}
               >
-                <b>Customer Workshop or Cloud Day </b><br/> One or many customer
-                workshop or event focused on highlighting compelling and
-                differentiated positioning of Oracle Solution and Capabilities. <br /><div class="color-green">0 hr(s)</div>
+                <b>Customer Workshop or Cloud Day </b>
+                <br /> One or many customer workshop or event focused on
+                highlighting compelling and differentiated positioning of Oracle
+                Solution and Capabilities. <br />
+                <div class="color-green">10 hr(s)</div>
               </div>
             ) : (
               ""
@@ -102,8 +92,10 @@ class Dashboard extends Component {
                 className="ServiceItem"
                 onClick={this.showQuestions.bind(this, 2)}
               >
-                <b>Consumption Service </b><br/> Service focused on enhancing the
-                consumption of our service offerings. <br /><div class="color-green">0 hr(s)</div>
+                <b>Consumption Service </b>
+                <br /> Service focused on enhancing the consumption of our
+                service offerings. <br />
+                <div class="color-green">3 hr(s)</div>
               </div>
             ) : (
               ""
@@ -113,8 +105,10 @@ class Dashboard extends Component {
                 className="ServiceItem"
                 onClick={this.showQuestions.bind(this, 3)}
               >
-                <b>Opportunity Pursuit </b><br /> Service which helps in winning the
-                current opportunity. <br /><div class="color-green">0 hr(s)</div>
+                <b>Opportunity Pursuit </b>
+                <br /> Service which helps in winning the current opportunity.{" "}
+                <br />
+                <div class="color-green">5 hr(s)</div>
               </div>
             ) : (
               ""
@@ -124,9 +118,10 @@ class Dashboard extends Component {
                 className="ServiceItem"
                 onClick={this.showQuestions.bind(this, 4)}
               >
-                <b>Expansion/Renewal Services </b><br /> Service which is focused on
-                Expansion of the services provided, or Renewal of our service
-                offerings. <br /><div class="color-green">0 hr(s)</div>
+                <b>Expansion/Renewal Services </b>
+                <br /> Service which is focused on Expansion of the services
+                provided, or Renewal of our service offerings. <br />
+                <div class="color-green">2 hr(s)</div>
               </div>
             ) : (
               ""
@@ -146,47 +141,29 @@ class Dashboard extends Component {
             <div className="QuestoionsBox">
               <div className="BoldText">Internal Services</div>
               <div>
-                <div className="QuestionAnswers">
-                  <div className="Question">
-                    Any other information for this service request? (e.g.
-                    additional products, business context)?*
-                  </div>
-                  <div className="Answer">
-                    <textarea />
-                  </div>
+                <div
+                  className="ServiceItem"
+                >
+                  <b>Consumption Service </b>
+                  <br /> Service focused on enhancing the consumption of our
+                  service offerings. <br />
+                  <div class="color-green">3 hr(s)</div>
                 </div>
-                <div className="QuestionAnswers">
-                  <div className="Question">
-                    Does this require on site resources?*
-                  </div>
-                  <div className="Answer">
-                    <textarea />
-                  </div>
+                <div
+                  className="ServiceItem"
+                >
+                  <b>Opportunity Pursuit </b>
+                  <br /> Service which helps in winning the current opportunity.{" "}
+                  <br />
+                  <div class="color-green">5 hr(s)</div>
                 </div>
-                <div className="QuestionAnswers">
-                  <div className="Question">
-                    What is the timeline identified to begin the service?*
-                  </div>
-                  <div className="Answer">
-                    <textarea />
-                  </div>
-                </div>
-                <div className="QuestionAnswers">
-                  <div className="Question">
-                    What needs to be highlighted for the customer?*
-                  </div>
-                  <div className="Answer">
-                    <textarea />
-                  </div>
-                </div>
-                <div className="QuestionAnswers">
-                  <div className="Question">
-                    Who are the key customer stakeholders and personas to
-                    target?*
-                  </div>
-                  <div className="Answer">
-                    <textarea />
-                  </div>
+                <div
+                  className="ServiceItem"
+                >
+                  <b>Expansion/Renewal Services </b>
+                  <br /> Service which is focused on Expansion of the services
+                  provided, or Renewal of our service offerings. <br />
+                  <div class="color-green">2 hr(s)</div>
                 </div>
               </div>
             </div>
@@ -231,22 +208,21 @@ class Dashboard extends Component {
             <div className="QuestoionsBox">
               <div className="BoldText">Internal Services</div>
               <div>
-                <div className="QuestionAnswers">
-                  <div className="Question">
-                    Any other information for this service request? (e.g.
-                    additional products, business context)?*
-                  </div>
-                  <div className="Answer">
-                    <textarea />
-                  </div>
+                <div
+                  className="ServiceItem"
+                >
+                  <b>Consumption Service </b>
+                  <br /> Service focused on enhancing the consumption of our
+                  service offerings. <br />
+                  <div class="color-green">3 hr(s)</div>
                 </div>
-                <div className="QuestionAnswers">
-                  <div className="Question">
-                    Does this require on site resources?*
-                  </div>
-                  <div className="Answer">
-                    <textarea />
-                  </div>
+                <div
+                  className="ServiceItem"
+                >
+                  <b>Expansion/Renewal Services </b>
+                  <br /> Service which is focused on Expansion of the services
+                  provided, or Renewal of our service offerings. <br />
+                  <div class="color-green">2 hr(s)</div>
                 </div>
               </div>
             </div>
