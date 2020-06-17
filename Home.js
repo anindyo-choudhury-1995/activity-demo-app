@@ -18,7 +18,7 @@ class Home extends Component {
               <div className="ListingItemText">Create Service Request</div>
             </div>
           </Link>*/}
-          <Link to="/dashboard">
+          <Link to="/dashboard-listing">
             <div className="ListingItem">
               <div className="ListingItemIcon">
                 <div className="CreateServiceRequest" />

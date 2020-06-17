@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "./dashboard.css";
 
 class Dashboard extends Component {
@@ -14,7 +15,9 @@ class Dashboard extends Component {
       <div className="DashboardContainer">
         <div className="Heading">Dashboard</div>
         <div className="ActionBar">
+        <Link to="/dashboard-listing">
           <button className="CreateButton">Back</button>
+        </Link>
         </div>
         <div className="TwoColumns">
           <div className="Columns">

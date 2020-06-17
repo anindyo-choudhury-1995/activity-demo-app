@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "./create.css";
 
 class Create extends Component {
@@ -870,8 +871,12 @@ class Create extends Component {
           My Service Requests - Solution Engineering
         </div>
         <div className="ActionBar">
+          <Link to="/dashboard-listing">
           <button className="CreateButton">Submit Service Request</button>
+          </Link>
+          <Link to="/dashboard-listing">
           <button className="CreateButton">Cancel</button>
+          </Link>
         </div>
         <div className="TwoColumns">
           <div className="Columns">

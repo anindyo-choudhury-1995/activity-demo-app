@@ -7,6 +7,7 @@ import Tags from './Tags'
 import Createtag from './Createtag'
 import Activities from './Activities'
 import Dashboard from './Dashboard'
+import DashboardListing from './DashboardListing'
 import {
   BrowserRouter as Router,
   Switch,
@@ -19,9 +20,9 @@ class Body extends Component {
     return (
       <div className="Body">
         <Switch>
-        {/*<Route path="/create">
+        <Route path="/create">
           <Create />
-        </Route>*/}
+        </Route>
         <Route path="/mapper">
           <Mapper />
         </Route>
@@ -36,6 +37,9 @@ class Body extends Component {
         </Route>
         <Route path="/activity">
           <Activities />
+        </Route>
+        <Route path="/dashboard-listing">
+          <DashboardListing />
         </Route>
         <Route path="/dashboard">
           <Dashboard />
