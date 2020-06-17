@@ -4,28 +4,36 @@ import "./mapper.css";
 
 class Mapper extends Component {
   componentDidMount() {
-  // this.props;
-
-  console.log(this.props, window.location.href)
-  this.setState({activities: []})
-}
+    console.log(window.location.href);
+    let index = window.location.href;
+    if (index[index.length - 1] == 1) {
+      this.setState({ activities: ["Day1 Onboarding", "Technical Support", "Cloud Coaching"] })
+    } else if (index[index.length - 1] == 2) {
+      this.setState({ activities: ["Opty Pursuit Activity"] })
+    } else if (index[index.length - 1] == 3) {
+      this.setState({ activities: ["Sales Play Workshop and Discovery","Innovation Day","Demonstration","Proof of Concept","Solution Proposal"] })
+    } else {
+      this.setState({ activities: [] })
+    }
+    console.log(this.state)
+  }
   state = {
-    activities: ['Day1 Onboarding', 'Technical Support', 'Cloud Coaching']
+    activities: ["Day1 Onboarding", "Technical Support", "Cloud Coaching"]
   };
-  removeFromActivities = (index) => {
+  removeFromActivities = index => {
     console.log(index);
     var newActivities = JSON.parse(JSON.stringify(this.state.activities));
-    newActivities.splice(index,1);
+    newActivities.splice(index, 1);
     console.log(newActivities);
-    this.setState({activities: newActivities});
-  }
-  addToActivities = (value) => {
+    this.setState({ activities: newActivities });
+  };
+  addToActivities = value => {
     if (value && this.state.activities.indexOf(value) == -1) {
       var newActivities = JSON.parse(JSON.stringify(this.state.activities));
-    newActivities.push(value);
-    this.setState({activities: newActivities});
+      newActivities.push(value);
+      this.setState({ activities: newActivities });
     }
-  }
+  };
   refreshPage = event => {
     window.location.reload();
   };
@@ -51,12 +59,13 @@ class Mapper extends Component {
             <div className="Items">
               <div className="ItemsFirst">Service</div>
               <div>
+                {this.state.activities.length == 3 ?
                 <select
                   className="ItemsSecondInput  Margin-8-08"
                   name="cars"
                   id="cars"
-                >
-                  <option value="">Select Service</option>
+                  defaultValue="consumptionService"
+                ><option value="">Select Service</option>
                   <option value="consumptionService">
                     Consumption Service
                   </option>
@@ -67,6 +76,63 @@ class Mapper extends Component {
                     Expansion/Renewal Services
                   </option>
                 </select>
+                 :
+                  this.state.activities.length == 1 ? 
+                  <select
+                  className="ItemsSecondInput  Margin-8-08"
+                  name="cars"
+                  id="cars"
+                  defaultValue="opportunityPursuit"
+                ><option value="">Select Service</option>
+                  <option value="consumptionService">
+                    Consumption Service
+                  </option>
+                  <option value="opportunityPursuit">
+                    Opportunity Pursuit
+                  </option>
+                  <option value="expansionRenewalServices">
+                    Expansion/Renewal Services
+                  </option>
+                </select>
+                  :
+                    this.state.activities.length == 5
+                     ? 
+                     <select
+                  className="ItemsSecondInput  Margin-8-08"
+                  name="cars"
+                  id="cars"
+                  defaultValue="expansionRenewalServices"
+                ><option value="">Select Service</option>
+                  <option value="consumptionService">
+                    Consumption Service
+                  </option>
+                  <option value="opportunityPursuit">
+                    Opportunity Pursuit
+                  </option>
+                  <option value="expansionRenewalServices">
+                    Expansion/Renewal Services
+                  </option>
+                </select>
+                     :
+                      <select
+                  className="ItemsSecondInput  Margin-8-08"
+                  name="cars"
+                  id="cars"
+                  defaultValue=""
+                ><option value="">Select Service</option>
+                  <option value="consumptionService">
+                    Consumption Service
+                  </option>
+                  <option value="opportunityPursuit">
+                    Opportunity Pursuit
+                  </option>
+                  <option value="expansionRenewalServices">
+                    Expansion/Renewal Services
+                  </option>
+                </select>
+                }
+                
+                  
               </div>
             </div>
             <br />
@@ -74,7 +140,12 @@ class Mapper extends Component {
             <div className="Items">
               <div className="ItemsFirst">Division</div>
               <div>
-                <select className="ItemsSecondInput  Margin-8-0" name="cars" id="cars">
+                <select
+                  className="ItemsSecondInput  Margin-8-0"
+                  name="cars"
+                  id="cars"
+                  defaultValue={this.state.division}
+                >
                   <option value="">Select Division</option>
                   <option value="EMEA">EMEA</option>
                   <option value="Global">Global</option>
@@ -106,28 +177,51 @@ class Mapper extends Component {
           <div className="SecondDiv">
             <div className="Width-400">
               <div className="ActivityHeading AddActivityHeading">
-                <div>Activities </div> 
-                <input className="ActivityInput" list="browsers" name="browser" id="browser" />
+                <div>Activities </div>
+                <input
+                  className="ActivityInput"
+                  list="browsers"
+                  name="browser"
+                  id="browser"
+                />
                 <datalist id="browsers">
                   <option value="">Select Division</option>
-                  {<option value="Day1 Onboarding">Day1 Onboarding</option>}
+                  <option value="Day1 Onboarding">Day1 Onboarding</option>
                   <option value="Technical Support">Technical Support</option>
                   <option value="Cloud Coaching">Cloud Coaching</option>
-                  <option value="Opty Pursuit Activity">Opty Pursuit Activity</option>
-                  <option value="Sales Play Workshop and Discovery">Sales Play Workshop and Discovery</option>
+                  <option value="Opty Pursuit Activity">
+                    Opty Pursuit Activity
+                  </option>
+                  <option value="Sales Play Workshop and Discovery">
+                    Sales Play Workshop and Discovery
+                  </option>
                   <option value="Innovation Day">Innovation Day</option>
                   <option value="Demonstration">Demonstration</option>
                   <option value="Proof of Concept">Proof of Concept</option>
                   <option value="Solution Proposal">Solution Proposal</option>
                 </datalist>
-                <button onClick={() => this.addToActivities(document.getElementById('browser').value)} className="RedWoodButton">Add Activity</button>
+                <button
+                  onClick={() =>
+                    this.addToActivities(
+                      document.getElementById("browser").value
+                    )
+                  }
+                  className="RedWoodButton"
+                >
+                  Add Activity
+                </button>
               </div>
               <div className="ChipSet">
                 {this.state.activities.map((activity, index) => (
                   <div className="chip" key={index}>
-                  {activity}
-                  <span className="closebtn" onClick={() => this.removeFromActivities(index)}>&times;</span>
-                </div>
+                    {activity}
+                    <span
+                      className="closebtn"
+                      onClick={() => this.removeFromActivities(index)}
+                    >
+                      &times;
+                    </span>
+                  </div>
                 ))}
                 {/*<div className="chip">
                   Day1 Onboarding
@@ -201,8 +295,7 @@ class Mapper extends Component {
             </div>
           </div>
         </div>
-        <div>
-        </div>
+        <div />
       </div>
     );
   }
