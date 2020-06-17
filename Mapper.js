@@ -4,7 +4,7 @@ import "./mapper.css";
 
 class Mapper extends Component {
   state = {
-    activities: []
+    activities: ['Day1 Onboarding', 'Technical Support', 'Cloud Coaching']
   };
   refreshPage = event => {
     window.location.reload();
@@ -104,7 +104,13 @@ class Mapper extends Component {
                 <button className="RedWoodButton">Add Activity</button>
               </div>
               <div className="ChipSet">
-                <div className="chip">
+                {this.state.nums.map((num, index) => (
+                  <div className="chip" key={index}>
+                  {activity} g
+                  <span className="closebtn">&times;</span>
+                </div>
+                ))}
+                {/*<div className="chip">
                   Day1 Onboarding
                   <span className="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>
                 </div>
@@ -115,7 +121,7 @@ class Mapper extends Component {
                 <div className="chip">
                   Cloud Coaching
                   <span className="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>
-                </div>
+                </div>*/}
               </div>
               {/*<div>
                 <div className="ActivityItem">
