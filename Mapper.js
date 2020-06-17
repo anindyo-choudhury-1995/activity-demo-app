@@ -6,6 +6,14 @@ class Mapper extends Component {
   state = {
     activities: ['Day1 Onboarding', 'Technical Support', 'Cloud Coaching']
   };
+  removeFromActivities = (index) => {
+    console.log(index);
+    var newActivities = JSON.parse(JSON.stringify(this.state.activities));
+    newActivities.splice(index,1);
+    console.log(newActivities);
+    this.setState({activities: newActivities});
+    
+  }
   refreshPage = event => {
     window.location.reload();
   };
@@ -13,7 +21,7 @@ class Mapper extends Component {
     return (
       <div className="MapperContainer">
         <div className="TopActionBar">
-          <div className="Create">Map Activity to Service Request</div>
+          <div className="Create">Map Activity to Service</div>
           <div>
             <Link to="/mapper">
               <button onClick={this.refreshPage}>Save and Continue</button>
@@ -29,7 +37,7 @@ class Mapper extends Component {
         <div className="TwoDivs MarginTop-48">
           <div className="FirstDiv">
             <div className="Items">
-              <div className="ItemsFirst">Service Request</div>
+              <div className="ItemsFirst">Service</div>
               <div>
                 <select
                   className="ItemsSecondInput  Margin-8-08"
@@ -37,7 +45,7 @@ class Mapper extends Component {
                   id="cars"
                   defaultValue="consumptionService"
                 >
-                  <option value="">Select Service Request</option>
+                  <option value="">Select Service</option>
                   <option value="consumptionService">
                     Consumption Service
                   </option>
@@ -104,10 +112,10 @@ class Mapper extends Component {
                 <button className="RedWoodButton">Add Activity</button>
               </div>
               <div className="ChipSet">
-                {this.state.nums.map((num, index) => (
+                {this.state.activities.map((activity, index) => (
                   <div className="chip" key={index}>
-                  {activity} g
-                  <span className="closebtn">&times;</span>
+                  {activity}
+                  <span className="closebtn" onclick={() => this.removeFromActivities(index)}>&times;</span>
                 </div>
                 ))}
                 {/*<div className="chip">
