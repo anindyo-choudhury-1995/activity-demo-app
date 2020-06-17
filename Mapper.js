@@ -55,7 +55,6 @@ class Mapper extends Component {
                   className="ItemsSecondInput  Margin-8-08"
                   name="cars"
                   id="cars"
-                  defaultValue="consumptionService"
                 >
                   <option value="">Select Service</option>
                   <option value="consumptionService">
@@ -75,7 +74,7 @@ class Mapper extends Component {
             <div className="Items">
               <div className="ItemsFirst">Division</div>
               <div>
-                <select className="ItemsSecondInput  Margin-8-0" name="cars" id="cars" defaultValue="Global">
+                <select className="ItemsSecondInput  Margin-8-0" name="cars" id="cars">
                   <option value="">Select Division</option>
                   <option value="EMEA">EMEA</option>
                   <option value="Global">Global</option>
