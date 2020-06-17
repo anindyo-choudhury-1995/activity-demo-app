@@ -59,7 +59,7 @@ class Mapper extends Component {
             <div className="Items">
               <div className="ItemsFirst">Service</div>
               <div>
-                {this.state.activities.length == 3 ?
+                {/*this.state.activities.length == 3 ?
                 <select
                   className="ItemsSecondInput  Margin-8-08"
                   name="cars"
@@ -130,8 +130,23 @@ class Mapper extends Component {
                     Expansion/Renewal Services
                   </option>
                 </select>
-                }
-                
+                */}
+                <select
+                  className="ItemsSecondInput  Margin-8-08"
+                  name="cars"
+                  id="cars"
+                  defaultValue=""
+                ><option value="">Select Service</option>
+                  <option value="consumptionService">
+                    Consumption Service
+                  </option>
+                  <option value="opportunityPursuit">
+                    Opportunity Pursuit
+                  </option>
+                  <option value="expansionRenewalServices">
+                    Expansion/Renewal Services
+                  </option>
+                </select>
                   
               </div>
             </div>
