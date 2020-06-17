@@ -22,6 +22,12 @@ class Dashboard extends Component {
         <div className="TwoColumns">
           <div className="Columns">
             <div className="ColumnItems">
+              <div className="ColumnItemLeft">Title</div>
+              <div className="ColumnItemRight">
+                Customer Workshop or Cloud Day
+              </div>
+            </div>
+            <div className="ColumnItems">
               <div className="ColumnItemLeft">Opportunity</div>
               <div className="ColumnItemRight">B53XL - L'OREAL</div>
             </div>
@@ -68,12 +74,12 @@ class Dashboard extends Component {
             <b>Description*</b>
           </div>
           <div className="DescriptionTextarea">
-            Description about the service request
+            A customer workshop or event focused on highlighting compelling and differentiated positioning of Oracle Solution and Capabilities.
           </div>
         </div>
-        <div className="ServicesBox">
+        <div className="ServicesBox margin-top-16">
           <div>
-            <b>Services*</b>
+            <b>Internal Services</b>
           </div>
           <div className="ServiceListing">
             {this.state.questionNum == 0 || this.state.questionNum == 1 ? (
@@ -131,7 +137,7 @@ class Dashboard extends Component {
             )}
           </div>
         </div>
-        {this.state.questionNum == 1 ? (
+        {/*{this.state.questionNum == 1 ? (
           <div>
             <div className="ChangeServiceBox">
               <button
@@ -256,7 +262,7 @@ class Dashboard extends Component {
           </div>
         ) : (
           ""
-        )}
+        )}*/}
       </div>
     );
   }
