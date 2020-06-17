@@ -23,6 +23,9 @@ class Body extends Component {
         <Route path="/create">
           <Create />
         </Route>
+        <Route path="/mapper/:id">
+          <Mapper />
+        </Route>
         <Route path="/mapper">
           <Mapper />
         </Route>

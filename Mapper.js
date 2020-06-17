@@ -3,6 +3,12 @@ import { Link } from "react-router-dom";
 import "./mapper.css";
 
 class Mapper extends Component {
+  componentDidMount() {
+  // this.props;
+
+  console.log(this.props, window.location.href)
+  this.setState({activities: []})
+}
   state = {
     activities: ['Day1 Onboarding', 'Technical Support', 'Cloud Coaching']
   };
