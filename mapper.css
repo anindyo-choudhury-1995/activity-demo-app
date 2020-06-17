@@ -35,7 +35,108 @@
     font-weight: 700;
 }
 
+.AddActivityHeading {
+  display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
 .ActivityItem {
   display: flex;
   align-items: center;
+}
+
+.chip {
+  display: inline-block;
+  padding: 0 25px;
+  height: 50px;
+  font-size: 18px;
+  line-height: 50px;
+  border-radius: 25px;
+  background-color: #f1f1f1;
+}
+
+.closebtn {
+  padding-left: 10px;
+  color: #888;
+  font-weight: bold;
+  float: right;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.closebtn:hover {
+  color: #000;
+}
+
+.RedWoodButton {
+  align-items:flex-start;
+  background-color:rgb(37, 84, 57);
+  background-image:none;
+  border-bottom-color:rgb(37, 84, 57);
+  border-bottom-left-radius:5px;
+  border-bottom-right-radius:5px;
+  border-bottom-style:solid;
+  border-bottom-width:1px;
+  border-collapse:separate;
+  border-image-outset:0;
+  border-image-repeat:stretch;
+  border-image-slice:100%;
+  border-image-source:none;
+  border-image-width:1;
+  border-left-color:rgb(37, 84, 57);
+  border-left-style:solid;
+  border-left-width:1px;
+  border-right-color:rgb(37, 84, 57);
+  border-right-style:solid;
+  border-right-width:1px;
+  border-top-color:rgb(37, 84, 57);
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+  border-top-style:solid;
+  border-top-width:1px;
+  box-shadow:none;
+  box-sizing:border-box;
+  color:rgb(255, 255, 255);
+  cursor:default;
+  display:inline-block;
+  font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size:12px;
+  font-stretch:100%;
+  font-style:normal;
+  font-variant-caps:normal;
+  font-variant-east-asian:normal;
+  font-variant-ligatures:normal;
+  font-variant-numeric:normal;
+  font-weight:700;
+  height:28px;
+  letter-spacing:normal;
+  line-height:normal;
+  margin-bottom:0px;
+  margin-left:2px;
+  margin-right:2px;
+  margin-top:0px;
+  min-height:28px;
+  padding-bottom:4px;
+  padding-left:8px;
+  padding-right:7px;
+  padding-top:3px;
+  text-align:center;
+  text-indent:0px;
+  text-rendering:auto;
+  text-shadow:none;
+  text-size-adjust:100%;
+  text-transform:none;
+  white-space:nowrap;
+  word-spacing:0px;
+  writing-mode:horizontal-tb;
+  -webkit-appearance:none;
+  -webkit-border-horizontal-spacing:0px;
+  -webkit-border-vertical-spacing:0px;
+  -webkit-border-image:none;
+}
+
+.ChipSet {
+  display: flex;
+  flex-wrap: wrap;
 }

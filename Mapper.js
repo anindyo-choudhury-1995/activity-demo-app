@@ -55,17 +55,10 @@ class Mapper extends Component {
             <div className="Items">
               <div className="ItemsFirst">Division</div>
               <div>
-                <select
-                  className="ItemsSecondInput  Margin-8-0"
-                  name="cars"
-                  id="cars"
-                  defaultValue="Global"
-                >
+                <select className="ItemsSecondInput  Margin-8-0" name="cars" id="cars" defaultValue="Global">
                   <option value="">Select Division</option>
                   <option value="EMEA">EMEA</option>
-                  <option value="Global">
-                    Global
-                  </option>
+                  <option value="Global">Global</option>
                   <option value="JAPAC">JAPAC</option>
                   <option value="LAD">LAD</option>
                   <option value="MYSQL">MYSQL</option>
@@ -92,10 +85,37 @@ class Mapper extends Component {
             </div>
           </div>
           <div className="SecondDiv">
-            <div className="Items Width-300">
-              <div className="ActivityHeading">Activities</div>
-              <div>
-                
+            <div className="Width-300">
+              <div className="ActivityHeading AddActivityHeading">
+                <span>Activities </span> 
+                <input list="browsers" name="browser" id="browser" />
+                <datalist id="browsers">
+                  <option value="">Select Division</option>
+                  <option value="Day1 Onboarding">Day1 Onboarding</option>
+                  <option value="Technical Support">Technical Support</option>
+                  <option value="Cloud Coaching">Cloud Coaching</option>
+                  <option value="Opty Pursuit Activity">Opty Pursuit Activity</option>
+                  <option value="Sales Play Workshop and Discovery">Sales Play Workshop and Discovery</option>
+                  <option value="Innovation Day">Innovation Day</option>
+                  <option value="Demonstration">Demonstration</option>
+                  <option value="Proof of Concept">Proof of Concept</option>
+                  <option value="Solution Proposal">Solution Proposal</option>
+                </datalist>
+                <button className="RedWoodButton">Add Activity</button>
+              </div>
+              <div className="ChipSet">
+                <div className="chip">
+                  Day1 Onboarding
+                  <span className="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>
+                </div>
+                <div className="chip">
+                  Technical Support
+                  <span className="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>
+                </div>
+                <div className="chip">
+                  Cloud Coaching
+                  <span className="closebtn" onclick="this.parentElement.style.display='none'">&times;</span>
+                </div>
               </div>
               {/*<div>
                 <div className="ActivityItem">
