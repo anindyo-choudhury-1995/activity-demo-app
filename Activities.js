@@ -21,7 +21,7 @@ class Activities extends Component {
         <table>
           <thead>
             <tr>
-              <th>Service Request</th>
+              <th>Service</th>
               <th>Division</th>
               <th>Activity(ies)</th>
               <th>Action</th>
