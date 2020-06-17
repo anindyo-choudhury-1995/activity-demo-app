@@ -27,6 +27,10 @@
   width: 300px;
 }
 
+.Width-400 {
+  width: 400px;
+}
+
 .MinWidth-300 {
   min-width: 300px;
 }

@@ -12,7 +12,13 @@ class Mapper extends Component {
     newActivities.splice(index,1);
     console.log(newActivities);
     this.setState({activities: newActivities});
-    
+  }
+  addToActivities = (value) => {
+    if (value && this.state.activities.indexOf(value) == -1) {
+      var newActivities = JSON.parse(JSON.stringify(this.state.activities));
+    newActivities.push(value);
+    this.setState({activities: newActivities});
+    }
   }
   refreshPage = event => {
     window.location.reload();
@@ -93,13 +99,13 @@ class Mapper extends Component {
             </div>
           </div>
           <div className="SecondDiv">
-            <div className="MinWidth-300">
+            <div className="Width-400">
               <div className="ActivityHeading AddActivityHeading">
                 <div>Activities </div> 
                 <input className="ActivityInput" list="browsers" name="browser" id="browser" />
                 <datalist id="browsers">
                   <option value="">Select Division</option>
-                  <option value="Day1 Onboarding">Day1 Onboarding</option>
+                  {<option value="Day1 Onboarding">Day1 Onboarding</option>}
                   <option value="Technical Support">Technical Support</option>
                   <option value="Cloud Coaching">Cloud Coaching</option>
                   <option value="Opty Pursuit Activity">Opty Pursuit Activity</option>
@@ -109,13 +115,13 @@ class Mapper extends Component {
                   <option value="Proof of Concept">Proof of Concept</option>
                   <option value="Solution Proposal">Solution Proposal</option>
                 </datalist>
-                <button className="RedWoodButton">Add Activity</button>
+                <button onClick={() => this.addToActivities(document.getElementById('browser').value)} className="RedWoodButton">Add Activity</button>
               </div>
               <div className="ChipSet">
                 {this.state.activities.map((activity, index) => (
                   <div className="chip" key={index}>
                   {activity}
-                  <span className="closebtn" onclick={() => this.removeFromActivities(index)}>&times;</span>
+                  <span className="closebtn" onClick={() => this.removeFromActivities(index)}>&times;</span>
                 </div>
                 ))}
                 {/*<div className="chip">
