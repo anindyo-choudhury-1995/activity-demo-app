@@ -48,7 +48,7 @@
   box-shadow:none;
   box-sizing:border-box;
   color:rgb(255, 255, 255);
-  cursor:default;
+  cursor:pointer;
   display:inline-block;
   font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size:12px;

@@ -24,6 +24,7 @@ class Activities extends Component {
               <th>Service Request</th>
               <th>Division</th>
               <th>Activity(ies)</th>
+              <th>Action</th>
             </tr>
           </thead>
           <tbody>
@@ -37,11 +38,21 @@ class Activities extends Component {
                 <br />
                 Cloud Coaching
               </td>
+              <td>
+                <Link to="/mapper">
+                  <button className="RedWoodButton">Edit</button>
+                </Link>
+              </td>
             </tr>
             <tr>
               <td>Opportunity Pursuit</td>
               <td>Global</td>
               <td>Opty Pursuit Activity</td>
+              <td>
+                <Link to="/mapper">
+                  <button className="RedWoodButton">Edit</button>
+                </Link>
+              </td>
             </tr>
             <tr>
               <td>Expansion/Renewal Services</td>
@@ -62,6 +73,11 @@ class Activities extends Component {
                 Solution Proposal
                 <br />
                 <br />
+              </td>
+              <td>
+                <Link to="/mapper">
+                  <button className="RedWoodButton">Edit</button>
+                </Link>
               </td>
             </tr>
           </tbody>
