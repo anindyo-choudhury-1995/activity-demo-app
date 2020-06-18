@@ -8,7 +8,7 @@ class Home extends Component {
       <div className="HomeContainer">
         <div className="Greeting">Good Afternoon, User!</div>
         <div className="NavMenu">
-          <div className="MenuItem">Sales & Services</div>
+          <div className="MenuItem">Sales & Service</div>
         </div>
         <h5 className="Apps">APPS</h5>
         <div className="AppsListing">
@@ -17,7 +17,7 @@ class Home extends Component {
               <div className="ListingItemIcon"><div className="CreateServiceRequest"></div></div>
               <div className="ListingItemText">Create Service Request</div>
             </div>
-          </Link>*/}
+          </Link>
           <Link to="/dashboard-listing">
             <div className="ListingItem">
               <div className="ListingItemIcon">
@@ -25,7 +25,7 @@ class Home extends Component {
               </div>
               <div className="ListingItemText"> Dashboard</div>
             </div>
-          </Link>
+          </Link>*/}
           <Link to="/time">
             <div className="ListingItem">
               <div className="ListingItemIcon">
@@ -39,7 +39,7 @@ class Home extends Component {
               <div className="ListingItemIcon">
                 <div className="CreateTags Mapper" />
               </div>
-              <div className="ListingItemText">Lookup Tags</div>
+              <div className="ListingItemText">Service Administration: Manage LookUps</div>
             </div>
           </Link>
           <Link to="/activity">
