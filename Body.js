@@ -8,6 +8,7 @@ import Createtag from './Createtag'
 import Activities from './Activities'
 import Dashboard from './Dashboard'
 import DashboardListing from './DashboardListing'
+import MapperV2 from './Mapper-v2'
 import {
   BrowserRouter as Router,
   Switch,
@@ -24,10 +25,10 @@ class Body extends Component {
           <Create />
         </Route>
         <Route path="/mapper/:id">
-          <Mapper />
+          <MapperV2 />
         </Route>
         <Route path="/mapper">
-          <Mapper />
+          <MapperV2 />
         </Route>
         <Route path="/time">
           <Time />
