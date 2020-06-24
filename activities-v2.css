@@ -9,8 +9,8 @@
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+  
 }
 
 /* Modal Content */
@@ -18,7 +18,28 @@
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
-  border: 1px solid #888;
+  border-bottom-color: rgba(0, 0, 0, 0.87);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-style: none;
+  border-bottom-width: 0px;
+  border-image-outset: 0;
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  border-image-source: none;
+  border-image-width: 1;
+  border-left-color: rgba(0, 0, 0, 0.87);
+  border-left-style: none;
+  border-left-width: 0px;
+  border-right-color: rgba(0, 0, 0, 0.87);
+  border-right-style: none;
+  border-right-width: 0px;
+  border-top-color: rgba(0, 0, 0, 0.87);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-top-style: none;
+  border-top-width: 0px;
+  box-shadow: rgba(0, 0, 0, 0.35) 4px 3px 10px 0px;
   width: 80%;
 }
 
@@ -38,9 +59,55 @@
 }
 
 .items-in-box {
-  display: flex;
-  align-items: center;
-  padding: 4px 8px;
-  /* background-color: #f1f1f1; */
-  margin: 4px;
+  background-color:rgb(252, 253, 254);
+border-bottom-color:rgba(0, 0, 0, 0);
+border-bottom-style:dotted;
+border-bottom-width:1px;
+border-collapse:separate;
+border-image-outset:0;
+border-image-repeat:stretch;
+border-image-slice:100%;
+border-image-source:none;
+border-image-width:1;
+border-left-color:rgba(0, 0, 0, 0);
+border-left-style:dotted;
+border-left-width:1px;
+border-right-color:rgba(0, 0, 0, 0);
+border-right-style:dotted;
+border-right-width:1px;
+border-top-color:rgba(0, 0, 0, 0);
+border-top-style:dotted;
+border-top-width:1px;
+color:rgb(51, 51, 51);
+cursor:default;
+display:list-item;
+font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size:12px;
+font-weight:400;
+line-height:20px;
+list-style-image:none;
+list-style-position:outside;
+list-style-type:none;
+padding-left:5px;
+padding-right:5px;
+padding-top:2px;
+text-align:left;
+text-size-adjust:100%;
+-webkit-border-horizontal-spacing:0px;
+-webkit-border-vertical-spacing:0px;
+}
+
+.items-in-box :hover {
+      color: #333333;
+    /* background-color: #e4f1fe; */
+    background-color: #eeeeee;
+}
+
+
+.items-in-box :focus {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+
+.text-align-end {
+  text-align: end;
 }

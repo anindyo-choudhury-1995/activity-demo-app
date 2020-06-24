@@ -25,8 +25,10 @@ class ActivitiesV2 extends Component {
                       document.getElementById("myModal").style.display = "none";
                   }
                   }>&times;</span>
-            
-
+        <div>
+          Service to Activity Mapping
+        </div>
+        <br />
         <div className="bold-text">
           Division &nbsp;
           <select
@@ -69,8 +71,8 @@ class ActivitiesV2 extends Component {
                 </div>
                 <div className="border-solid-1-px height-300-px overflow-auto">
                 {this.state.services.map((activity, index) => (
-                    <div className="item-in-box" key={index}>
-                      <div className="item-in-box">{activity}</div>
+                    <div className="items-in-box" key={index}>
+                      <div className="items-in-box">{activity}</div>
                     </div>
                   ))}
                   <div className="padding-8-px">
@@ -138,8 +140,8 @@ class ActivitiesV2 extends Component {
                 </div>
                 <div className="border-solid-1-px height-300-px overflow-auto">
                   {this.state.selectedServices.map((activity, index) => (
-                    <div className="item-in-box" key={index}>
-                      <div className="item-in-box">{activity}</div>
+                    <div className="items-in-box" key={index}>
+                      <div className="items-in-box">{activity}</div>
                     </div>
                   ))}
                 </div>
@@ -147,7 +149,9 @@ class ActivitiesV2 extends Component {
             </div>
           </div>
         </div>
-
+        <div className="text-align-end">
+          <button className="RedWoodButton">Ok</button><button className="RedWoodButton">Cancel</button>
+        </div>
 
 
           </div>
