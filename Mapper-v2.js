@@ -64,8 +64,8 @@ class Mapper extends Component {
             </Link>
           </div>
         </div>
-        <div className="Division">
-          Division
+        <div className="bold-text">
+          Division &nbsp;
           <select
             className="ItemsSecondInput  Margin-8-0"
             name="cars"
@@ -97,19 +97,53 @@ class Mapper extends Component {
         </div>
         <div className="outContainer">
           <div className="inFirstContainer">
-            <div>
-              list
-            </div>
-            <div>
-              selected
+            <h3 className="inFirstContainerTop bold-text">Sevices</h3>
+            <div className="inFirstContainerBottom">
+              <div className="inFirstContainerLeft">
+                <div  className="bold-text">
+                  Available
+                </div>
+                <div className="border-solid-1-px height-300-px">
+                </div>
+              </div>
+              <div className="inFirstContainerCenter">
+                <button className="RedWoodButton" title="Select">&gt;</button>
+                <button className="RedWoodButton" title="Select All">&gt;&gt;</button>
+                <button className="RedWoodButton" title="Deselect">&lt;</button>
+                <button className="RedWoodButton" title="Deselect All">&lt;&lt;</button>
+              </div>
+              <div className="inFirstContainerRight">
+                <div  className="bold-text">
+                  Selected
+                </div>
+                <div className="border-solid-1-px height-300-px">
+                </div>
+              </div>
             </div>
           </div>
-          <div  className="inSecondContainer">
-            <div>
-              list
-            </div>
-            <div>
-              selected
+          <div className="inSecondContainer">
+            <h3 className="inSecondContainerTop bold-text">Activities</h3>
+            <div className="inSecondContainerBottom">
+              <div className="inSecondContainerLeft">
+                <div  className="bold-text">
+                  Available
+                </div>
+                <div className="border-solid-1-px height-300-px">
+                </div>
+              </div>
+              <div className="inSecondContainerCenter">
+                <button className="RedWoodButton" title="Select">&gt;</button>
+                <button className="RedWoodButton" title="Select All">&gt;&gt;</button>
+                <button className="RedWoodButton" title="Deselect">&lt;</button>
+                <button className="RedWoodButton" title="Deselect All">&lt;&lt;</button>
+              </div>
+              <div className="inSecondContainerRight">
+                <div  className="bold-text">
+                  Selected
+                </div>
+                <div className="border-solid-1-px height-300-px">
+                </div>
+              </div>
             </div>
           </div>
         </div>

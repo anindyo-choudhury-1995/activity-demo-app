@@ -154,12 +154,20 @@
   flex-wrap: wrap;
 }
 
-.Division {
+.bold-text {
   color:rgb(49, 45, 42);
 display:block;
 font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
 font-size:12px;
 font-weight:700;
+}
+
+.border-solid-1-px {
+  border: solid 1px rgb(223, 228, 231);
+}
+
+.height-300-px {
+  height: 300px;
 }
 
 .outContainer {
@@ -169,13 +177,62 @@ font-weight:700;
 }
 
 .inFirstContainer {
+  min-width: 400px;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 16px;
+}
+
+.inFirstContainerBottom {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   flex-wrap: wrap;
+  width: 100%;
+}
+
+.inFirstContainerLeft {
+  width: 45%;
+}
+.inFirstContainerCenter {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+}
+.inFirstContainerCenter button {
+  margin: 4px;
+}
+.inFirstContainerRight {
+  width: 45%;
 }
 
 .inSecondContainer {
+  min-width: 400px;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 16px;
+}
+
+.inSecondContainerBottom {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   flex-wrap: wrap;
+  width: 100%;
 }
+
+.inSecondContainerLeft {
+  width: 45%;
+}
+.inSecondContainerCenter {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+}
+.inSecondContainerCenter button {
+  margin: 4px;
+}
+.inSecondContainerRight {
+  width: 45%;
+}
+
