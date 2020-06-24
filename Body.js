@@ -6,6 +6,7 @@ import Time from './Time'
 import Tags from './Tags'
 import Createtag from './Createtag'
 import Activities from './Activities'
+import ActivitiesV2 from './Activities-v2'
 import Dashboard from './Dashboard'
 import DashboardListing from './DashboardListing'
 import MapperV2 from './Mapper-v2'
@@ -44,7 +45,7 @@ class Body extends Component {
           <Createtag />
         </Route>
         <Route path="/activity">
-          <Activities />
+          <ActivitiesV2 />
         </Route>
         <Route path="/dashboard-listing">
           <DashboardListing />

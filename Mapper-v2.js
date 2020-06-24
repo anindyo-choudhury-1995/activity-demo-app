@@ -87,12 +87,6 @@ class MapperV2 extends Component {
                 <div className="border-solid-1-px height-300-px overflow-auto">
                 {this.state.services.map((activity, index) => (
                     <div className="item-in-box" key={index}>
-                      <input
-                        type="checkbox"
-                        id={index}
-                        name={index}
-                        value={activity}
-                      />
                       <div className="item-in-box">{activity}</div>
                     </div>
                   ))}
@@ -119,12 +113,6 @@ class MapperV2 extends Component {
                 <div className="border-solid-1-px height-300-px overflow-auto">
                   {this.state.selectedServices.map((activity, index) => (
                     <div className="item-in-box" key={index}>
-                      <input
-                        type="checkbox"
-                        id={index}
-                        name={index}
-                        value={activity}
-                      />
                       <div className="item-in-box">{activity}</div>
                     </div>
                   ))}
@@ -143,7 +131,6 @@ class MapperV2 extends Component {
                 <div className="border-solid-1-px height-300-px overflow-auto">
                   {this.state.activities.map((activity, index) => (
                   <div className="item-in-box" key={index}>
-                    <input type="checkbox" id={index} name={index} value={activity} />
                     <div className="item-in-box">
                       {activity}
                     </div>
@@ -169,12 +156,6 @@ class MapperV2 extends Component {
                 <div className="border-solid-1-px height-300-px overflow-auto">
                   {this.state.selectedServices.map((activity, index) => (
                     <div className="item-in-box" key={index}>
-                      <input
-                        type="checkbox"
-                        id={index}
-                        name={index}
-                        value={activity}
-                      />
                       <div className="item-in-box">{activity}</div>
                     </div>
                   ))}
