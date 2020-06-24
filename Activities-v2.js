@@ -56,6 +56,24 @@ class ActivitiesV2 extends Component {
       });
     }
   };
+  selectAllService = () => {
+    this.setState({selectedServices: [
+      "Consumption Service",
+      "Opportunity Pursuit",
+      "Expansion/Renewal Services"
+    ]}, ()=> {
+      this.setState({services: []})
+    })
+  }
+  unselectAllService = () => {
+    this.setState({services: [
+      "Consumption Service",
+      "Opportunity Pursuit",
+      "Expansion/Renewal Services"
+    ]}, () => {
+      this.setState({selectedServices: []})
+    })
+  }
   markActivity = value => {
     this.setState({markedActivity: [value]})
   }
@@ -84,6 +102,36 @@ class ActivitiesV2 extends Component {
       });
     }
   };
+  selectAllActivity = () => {
+    this.setState({selectedActivities: [
+      "Day1 Onboarding",
+      "Technical Support",
+      "Cloud Coaching",
+      "Opty Pursuit Activity",
+      "Sales Play Workshop and Discovery",
+      "Innovation Day",
+      "Demonstration",
+      "Proof of Concept",
+      "Solution Proposal"
+    ]}, ()=> {
+      this.setState({activities: []})
+    })
+  }
+  unselectAllActivity = () => {
+    this.setState({activities: [
+      "Day1 Onboarding",
+      "Technical Support",
+      "Cloud Coaching",
+      "Opty Pursuit Activity",
+      "Sales Play Workshop and Discovery",
+      "Innovation Day",
+      "Demonstration",
+      "Proof of Concept",
+      "Solution Proposal"
+    ]}, () => {
+      this.setState({selectedActivities: []})
+    })
+  }
   new = (window.onclick = function(event) {
     if (event.target == document.getElementById("myModal")) {
       document.getElementById("myModal").style.display = "none";
@@ -167,13 +215,13 @@ class ActivitiesV2 extends Component {
                     <button className="RedWoodButton" onClick={() => {this.selectService(this.state.markedService[0]);}} title="Select">
                       &gt;
                     </button>
-                    <button className="RedWoodButton" title="Select All">
+                    <button className="RedWoodButton" onClick={() => {this.selectAllService()}} title="Select All">
                       &gt;&gt;
                     </button>
                     <button className="RedWoodButton" onClick={() => {this.unselectService(this.state.unmarkedService[0]);}} title="Deselect">
                       &lt;
                     </button>
-                    <button className="RedWoodButton" title="Deselect All">
+                    <button className="RedWoodButton" onClick={() => {this.unselectAllService()}} title="Deselect All">
                       &lt;&lt;
                     </button>
                   </div>
@@ -220,13 +268,13 @@ class ActivitiesV2 extends Component {
                     <button className="RedWoodButton" onClick={() => {this.selectActivity(this.state.markedActivity[0]);}} title="Select">
                       &gt;
                     </button>
-                    <button className="RedWoodButton" title="Select All">
+                    <button className="RedWoodButton" onClick={() => {this.selectAllActivity()}} title="Select All">
                       &gt;&gt;
                     </button>
                     <button className="RedWoodButton" onClick={() => {this.unselectActivity(this.state.unmarkedActivity[0]);}} title="Deselect">
                       &lt;
                     </button>
-                    <button className="RedWoodButton" title="Deselect All">
+                    <button className="RedWoodButton" onClick={() => {this.unselectAllActivity()}} title="Deselect All">
                       &lt;&lt;
                     </button>
                   </div>
