@@ -16,13 +16,73 @@ class ActivitiesV2 extends Component {
       "Proof of Concept",
       "Solution Proposal"
     ],
+    markedActivity: [],
+    unmarkedActivity: [],
     selectedActivities: [],
     services: [
       "Consumption Service",
       "Opportunity Pursuit",
       "Expansion/Renewal Services"
     ],
+    markedService: [],
+    unmarkedService: [],
     selectedServices: []
+  };
+  markService = value => {
+    this.setState({markedService: [value]})
+  }
+  unmarkService = value => {
+    this.setState({unmarkedService: [value]})
+  }
+  selectService = value => {
+    if (value && this.state.services.indexOf(value) != -1 && this.state.selectedServices.indexOf(value) == -1) {
+      var newSelectedServices = JSON.parse(JSON.stringify(this.state.selectedServices));
+      var newServices = JSON.parse(JSON.stringify(this.state.services));
+      newSelectedServices.push(value);
+      newServices = newServices.filter(service => service != value);
+      this.setState({ selectedServices: newSelectedServices }, () => {
+        this.setState({services: newServices})
+      });
+    }
+  };
+  unselectService = value => {
+    if (value && this.state.services.indexOf(value) == -1 && this.state.selectedServices.indexOf(value) != -1) {
+      var newSelectedServices = JSON.parse(JSON.stringify(this.state.selectedServices));
+      var newServices = JSON.parse(JSON.stringify(this.state.services));
+      newServices.push(value);
+      newSelectedServices = newSelectedServices.filter(service => service != value);
+      this.setState({services: newServices}, () => {
+        this.setState({ selectedServices: newSelectedServices })
+      });
+    }
+  };
+  markActivity = value => {
+    this.setState({markedActivity: [value]})
+  }
+  unmarkActivity = value => {
+    this.setState({unmarkedActivity: [value]})
+  }
+  selectActivity = value => {
+    if (value && this.state.activities.indexOf(value) != -1 && this.state.selectedActivities.indexOf(value) == -1) {
+      var newSelectedActivities = JSON.parse(JSON.stringify(this.state.selectedActivities));
+      var newActivities = JSON.parse(JSON.stringify(this.state.activities));
+      newSelectedActivities.push(value);
+      newActivities = newActivities.filter(activity => activity != value);
+      this.setState({ selectedActivities: newSelectedActivities }, () => {
+        this.setState({activities: newActivities})
+      });
+    }
+  };
+  unselectActivity = value => {
+    if (value && this.state.activities.indexOf(value) == -1 && this.state.selectedActivities.indexOf(value) != -1) {
+      var newSelectedActivities = JSON.parse(JSON.stringify(this.state.selectedActivities));
+      var newActivities = JSON.parse(JSON.stringify(this.state.activities));
+      newActivities.push(value);
+      newSelectedActivities = newSelectedActivities.filter(activity => activity != value);
+      this.setState({activities: newActivities}, () => {
+        this.setState({ selectedActivities: newSelectedActivities })
+      });
+    }
   };
   new = (window.onclick = function(event) {
     if (event.target == document.getElementById("myModal")) {
@@ -88,9 +148,9 @@ class ActivitiesV2 extends Component {
                   <div className="inFirstContainerLeft">
                     <div className="bold-text">Available</div>
                     <div className="border-solid-1-px height-300-px overflow-auto">
-                      {this.state.services.map((activity, index) => (
+                      {this.state.services.map((service, index) => (
                         <div className="items-in-box" key={index}>
-                          <button className="items-in-box">{activity}</button>
+                          <button onClick={() => {this.markService(service);}} className="items-in-box">{service}</button>
                         </div>
                       ))}
                       <div className="padding-8-px">
@@ -104,13 +164,13 @@ class ActivitiesV2 extends Component {
                     </div>
                   </div>
                   <div className="inFirstContainerCenter">
-                    <button className="RedWoodButton" title="Select">
+                    <button className="RedWoodButton" onClick={() => {this.selectService(this.state.markedService[0]);}} title="Select">
                       &gt;
                     </button>
                     <button className="RedWoodButton" title="Select All">
                       &gt;&gt;
                     </button>
-                    <button className="RedWoodButton" title="Deselect">
+                    <button className="RedWoodButton" onClick={() => {this.unselectService(this.state.unmarkedService[0]);}} title="Deselect">
                       &lt;
                     </button>
                     <button className="RedWoodButton" title="Deselect All">
@@ -120,9 +180,9 @@ class ActivitiesV2 extends Component {
                   <div className="inFirstContainerRight">
                     <div className="bold-text">Selected</div>
                     <div className="border-solid-1-px height-300-px overflow-auto">
-                      {this.state.selectedServices.map((activity, index) => (
+                      {this.state.selectedServices.map((service, index) => (
                         <div className="items-in-box" key={index}>
-                          <button className="items-in-box">{activity}</button>
+                          <button onClick={() => {this.unmarkService(service);}} className="items-in-box">{service}</button>
                         </div>
                       ))}
                     </div>
@@ -143,7 +203,7 @@ class ActivitiesV2 extends Component {
                     <div className="border-solid-1-px height-300-px overflow-auto">
                       {this.state.activities.map((activity, index) => (
                         <div className="items-in-box" key={index}>
-                          <button className="items-in-box">{activity}</button>
+                          <button onClick={() => {this.markActivity(activity);}} className="items-in-box">{activity}</button>
                         </div>
                       ))}
                       <div className="padding-8-px">
@@ -157,13 +217,13 @@ class ActivitiesV2 extends Component {
                     </div>
                   </div>
                   <div className="inSecondContainerCenter">
-                    <button className="RedWoodButton" title="Select">
+                    <button className="RedWoodButton" onClick={() => {this.selectActivity(this.state.markedActivity[0]);}} title="Select">
                       &gt;
                     </button>
                     <button className="RedWoodButton" title="Select All">
                       &gt;&gt;
                     </button>
-                    <button className="RedWoodButton" title="Deselect">
+                    <button className="RedWoodButton" onClick={() => {this.unselectActivity(this.state.unmarkedActivity[0]);}} title="Deselect">
                       &lt;
                     </button>
                     <button className="RedWoodButton" title="Deselect All">
@@ -173,9 +233,9 @@ class ActivitiesV2 extends Component {
                   <div className="inSecondContainerRight">
                     <div className="bold-text">Selected</div>
                     <div className="border-solid-1-px height-300-px overflow-auto">
-                      {this.state.selectedServices.map((activity, index) => (
+                      {this.state.selectedActivities.map((activity, index) => (
                         <div className="items-in-box" key={index}>
-                          <button className="items-in-box">{activity}</button>
+                          <button onClick={() => {this.unmarkActivity(activity);}} className="items-in-box">{activity}</button>
                         </div>
                       ))}
                     </div>
