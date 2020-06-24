@@ -28,7 +28,7 @@ class Mapper extends Component {
     console.log(this.state);
   }
   state = {
-    activities: ["Day1 Onboarding", "Technical Support", "Cloud Coaching"]
+    activities: ["Day1 Onboarding", "Technical Support", "Cloud Coaching", "Opty Pursuit Activity", "Sales Play Workshop and Discovery", "Innovation Day", "Demonstration", "Proof of Concept", "Solution Proposal"]
   };
   removeFromActivities = index => {
     console.log(index);
@@ -129,6 +129,11 @@ class Mapper extends Component {
                   Available
                 </div>
                 <div className="border-solid-1-px height-300-px">
+                  {this.state.activities.map((activity, index) => (
+                    <div  key={index}>
+                      {activity}
+                    </div>
+                  ))}
                 </div>
               </div>
               <div className="inSecondContainerCenter">
