@@ -3,32 +3,12 @@ import { Link } from "react-router-dom";
 import "./mapper-v2.css";
 
 class Mapper extends Component {
-  componentDidMount() {
-    // console.log(window.location.href);
-    // let index = window.location.href;
-    // if (index[index.length - 1] == 1) {
-    //   this.setState({
-    //     activities: ["Day1 Onboarding", "Technical Support", "Cloud Coaching"]
-    //   });
-    // } else if (index[index.length - 1] == 2) {
-    //   this.setState({ activities: ["Opty Pursuit Activity"] });
-    // } else if (index[index.length - 1] == 3) {
-    //   this.setState({
-    //     activities: [
-    //       "Sales Play Workshop and Discovery",
-    //       "Innovation Day",
-    //       "Demonstration",
-    //       "Proof of Concept",
-    //       "Solution Proposal"
-    //     ]
-    //   });
-    // } else {
-    //   this.setState({ activities: [] });
-    // }
-    // console.log(this.state);
-  }
   state = {
-    activities: ["Day1 Onboarding", "Technical Support", "Cloud Coaching", "Opty Pursuit Activity", "Sales Play Workshop and Discovery", "Innovation Day", "Demonstration", "Proof of Concept", "Solution Proposal"]
+    activities: ["Day1 Onboarding", "Technical Support", "Cloud Coaching", "Opty Pursuit Activity", "Sales Play Workshop and Discovery", "Innovation Day", "Demonstration", "Proof of Concept", "Solution Proposal"],
+    selectedActivities: [],
+    services: ["Consumption Service", "Opportunity Pursuit", "Expansion/Renewal Services"],
+    selectedServices: []
+    
   };
   removeFromActivities = index => {
     console.log(index);
@@ -98,12 +78,32 @@ class Mapper extends Component {
         <div className="outContainer">
           <div className="inFirstContainer">
             <h3 className="inFirstContainerTop bold-text">Sevices</h3>
+            <h3 className="bold-text"> Search <input/> <button className="RedWoodButton">Search</button> <button className="RedWoodButton">Clear</button> </h3>
             <div className="inFirstContainerBottom">
               <div className="inFirstContainerLeft">
                 <div  className="bold-text">
                   Available
                 </div>
-                <div className="border-solid-1-px height-300-px">
+                <div className="border-solid-1-px height-300-px overflow-auto">
+                {this.state.services.map((activity, index) => (
+                    <div className="item-in-box" key={index}>
+                      <input
+                        type="checkbox"
+                        id={index}
+                        name={index}
+                        value={activity}
+                      />
+                      <div className="item-in-box">{activity}</div>
+                    </div>
+                  ))}
+                  <div className="padding-8-px">
+                    <button
+                      title="Loads more activities"
+                      className="RedWoodButton"
+                    >
+                      Load More
+                    </button>
+                  </div>
                 </div>
               </div>
               <div className="inFirstContainerCenter">
@@ -116,16 +116,28 @@ class Mapper extends Component {
                 <div  className="bold-text">
                   Selected
                 </div>
-                <div className="border-solid-1-px height-300-px">
+                <div className="border-solid-1-px height-300-px overflow-auto">
+                  {this.state.selectedServices.map((activity, index) => (
+                    <div className="item-in-box" key={index}>
+                      <input
+                        type="checkbox"
+                        id={index}
+                        name={index}
+                        value={activity}
+                      />
+                      <div className="item-in-box">{activity}</div>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
           </div>
           <div className="inSecondContainer">
             <h3 className="inSecondContainerTop bold-text">Activities</h3>
+            <h3 className="bold-text"> Search <input/> <button className="RedWoodButton">Search</button> <button className="RedWoodButton">Clear</button> </h3>
             <div className="inSecondContainerBottom">
               <div className="inSecondContainerLeft">
-                <div  className="bold-text">
+                <div className="bold-text">
                   Available
                 </div>
                 <div className="border-solid-1-px height-300-px overflow-auto">
@@ -137,6 +149,11 @@ class Mapper extends Component {
                     </div>
                   </div>
                 ))}
+                <div className="padding-8-px">
+                  <button title="Loads more activities" className="RedWoodButton">
+                    Load More
+                  </button>
+                </div>
                 </div>
               </div>
               <div className="inSecondContainerCenter">
@@ -149,7 +166,18 @@ class Mapper extends Component {
                 <div  className="bold-text">
                   Selected
                 </div>
-                <div className="border-solid-1-px height-300-px">
+                <div className="border-solid-1-px height-300-px overflow-auto">
+                  {this.state.selectedServices.map((activity, index) => (
+                    <div className="item-in-box" key={index}>
+                      <input
+                        type="checkbox"
+                        id={index}
+                        name={index}
+                        value={activity}
+                      />
+                      <div className="item-in-box">{activity}</div>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
