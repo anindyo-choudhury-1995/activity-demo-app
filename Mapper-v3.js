@@ -5,9 +5,7 @@ import "./mapper-v3.css";
 class MapperV3 extends Component {
   state = {
     activities: [],
-    selectedActivities: [],
-    services: ["Consumption Service", "Opportunity Pursuit", "Expansion/Renewal Services"],
-    selectedServices: []
+    services: []
     
   };
   removeFromActivities = index => {
@@ -22,6 +20,20 @@ class MapperV3 extends Component {
       var newActivities = JSON.parse(JSON.stringify(this.state.activities));
       newActivities.push(value);
       this.setState({ activities: newActivities });
+    }
+  };
+  removeFromServices = index => {
+    console.log(index);
+    var newServices = JSON.parse(JSON.stringify(this.state.services));
+    newServices.splice(index, 1);
+    console.log(newServices);
+    this.setState({ services: newServices });
+  };
+  addToServices = value => {
+    if (value && this.state.services.indexOf(value) == -1) {
+      var newServices = JSON.parse(JSON.stringify(this.state.services));
+      newServices.push(value);
+      this.setState({ services: newServices });
     }
   };
   refreshPage = event => {
@@ -76,36 +88,28 @@ class MapperV3 extends Component {
           </select>
         </div>
         <div className="outContainer">
-          <div className="inFirstContainer">
+          <div className="inFirstContainer-v3">
             <div className="ActivityHeading AddActivityHeading">
                 <div>Services </div>
                 <input
                   className="ActivityInput"
-                  list="browsers"
-                  name="browser"
-                  id="browser"
+                  list="services"
+                  name="service"
+                  id="service"
                 />
-                <datalist id="browsers">
-                  <option value="">Select Division</option>
-                  <option value="Day1 Onboarding">Day1 Onboarding</option>
-                  <option value="Technical Support">Technical Support</option>
-                  <option value="Cloud Coaching">Cloud Coaching</option>
-                  <option value="Opty Pursuit Activity">
-                    Opty Pursuit Activity
-                  </option>
-                  <option value="Sales Play Workshop and Discovery">
-                    Sales Play Workshop and Discovery
-                  </option>
-                  <option value="Innovation Day">Innovation Day</option>
-                  <option value="Demonstration">Demonstration</option>
-                  <option value="Proof of Concept">Proof of Concept</option>
-                  <option value="Solution Proposal">Solution Proposal</option>
+                <datalist id="services">
+                  <option value="">Select Services</option>
+                  <option value="Consumption Service">Consumption Service</option>
+                  <option value="Opportunity Pursuit">Opportunity Pursuit</option>
+                  <option value="Expansion/Renewal Services">Expansion/Renewal Services</option>
                 </datalist>
                 <button
-                  onClick={() =>
-                    this.addToActivities(
-                      document.getElementById("browser").value
-                    )
+                  onClick={() => {
+                    this.addToServices(
+                      document.getElementById("service").value
+                    );
+                    document.getElementById("service").value = "";
+                    }
                   }
                   className="RedWoodButton"
                 >
@@ -118,7 +122,7 @@ class MapperV3 extends Component {
                     {service}
                     <span
                       className="closebtn"
-                      onClick={() => this.removeFromActivities(index)}
+                      onClick={() => this.removeFromServices(index)}
                     >
                       &times;
                     </span>
@@ -127,17 +131,17 @@ class MapperV3 extends Component {
               </div>
 
           </div>
-          <div className="inSecondContainer">
+          <div className="inSecondContainer-v3">
               <div className="ActivityHeading AddActivityHeading">
                 <div>Activities </div>
                 <input
                   className="ActivityInput"
-                  list="browsers"
-                  name="browser"
-                  id="browser"
+                  list="activities"
+                  name="activity"
+                  id="activity"
                 />
-                <datalist id="browsers">
-                  <option value="">Select Division</option>
+                <datalist id="activities">
+                  <option value="">Select Activities</option>
                   <option value="Day1 Onboarding">Day1 Onboarding</option>
                   <option value="Technical Support">Technical Support</option>
                   <option value="Cloud Coaching">Cloud Coaching</option>
@@ -153,10 +157,12 @@ class MapperV3 extends Component {
                   <option value="Solution Proposal">Solution Proposal</option>
                 </datalist>
                 <button
-                  onClick={() =>
+                  onClick={() => {
                     this.addToActivities(
-                      document.getElementById("browser").value
-                    )
+                      document.getElementById("activity").value
+                    );
+                      document.getElementById("activity").value = ""
+                  }
                   }
                   className="RedWoodButton"
                 >

@@ -1,0 +1,13 @@
+.inFirstContainer-v3 {
+  min-width: 300px;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 16px 0;
+}
+
+.inSecondContainer-v3 {
+  min-width: 300px;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 16px 0;
+}
