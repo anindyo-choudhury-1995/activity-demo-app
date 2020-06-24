@@ -13,6 +13,15 @@
   
 }
 
+.bolder-text {
+  color:rgb(49, 45, 42);
+display:block;
+font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size:16px;
+font-weight:700;
+}
+
+
 /* Modal Content */
 .modal-content {
   background-color: #fefefe;
@@ -106,6 +115,8 @@ text-size-adjust:100%;
 
 .items-in-box :focus {
   outline: -webkit-focus-ring-color auto 1px;
+    background-color: #e4f1fe;
+
 }
 
 .text-align-end {
