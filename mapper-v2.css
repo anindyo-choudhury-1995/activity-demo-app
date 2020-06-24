@@ -170,6 +170,18 @@ font-weight:700;
   height: 300px;
 }
 
+.overflow-auto {
+  overflow: auto;
+}
+
+.item-in-box {
+  display: flex;
+  align-items: center;
+  padding: 4px 8px;
+  background-color: #f1f1f1;
+  margin: 4px;
+}
+
 .outContainer {
   display: flex;
   justify-content: space-around;

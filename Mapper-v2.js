@@ -4,28 +4,28 @@ import "./mapper-v2.css";
 
 class Mapper extends Component {
   componentDidMount() {
-    console.log(window.location.href);
-    let index = window.location.href;
-    if (index[index.length - 1] == 1) {
-      this.setState({
-        activities: ["Day1 Onboarding", "Technical Support", "Cloud Coaching"]
-      });
-    } else if (index[index.length - 1] == 2) {
-      this.setState({ activities: ["Opty Pursuit Activity"] });
-    } else if (index[index.length - 1] == 3) {
-      this.setState({
-        activities: [
-          "Sales Play Workshop and Discovery",
-          "Innovation Day",
-          "Demonstration",
-          "Proof of Concept",
-          "Solution Proposal"
-        ]
-      });
-    } else {
-      this.setState({ activities: [] });
-    }
-    console.log(this.state);
+    // console.log(window.location.href);
+    // let index = window.location.href;
+    // if (index[index.length - 1] == 1) {
+    //   this.setState({
+    //     activities: ["Day1 Onboarding", "Technical Support", "Cloud Coaching"]
+    //   });
+    // } else if (index[index.length - 1] == 2) {
+    //   this.setState({ activities: ["Opty Pursuit Activity"] });
+    // } else if (index[index.length - 1] == 3) {
+    //   this.setState({
+    //     activities: [
+    //       "Sales Play Workshop and Discovery",
+    //       "Innovation Day",
+    //       "Demonstration",
+    //       "Proof of Concept",
+    //       "Solution Proposal"
+    //     ]
+    //   });
+    // } else {
+    //   this.setState({ activities: [] });
+    // }
+    // console.log(this.state);
   }
   state = {
     activities: ["Day1 Onboarding", "Technical Support", "Cloud Coaching", "Opty Pursuit Activity", "Sales Play Workshop and Discovery", "Innovation Day", "Demonstration", "Proof of Concept", "Solution Proposal"]
@@ -128,12 +128,15 @@ class Mapper extends Component {
                 <div  className="bold-text">
                   Available
                 </div>
-                <div className="border-solid-1-px height-300-px">
+                <div className="border-solid-1-px height-300-px overflow-auto">
                   {this.state.activities.map((activity, index) => (
-                    <div  key={index}>
+                  <div className="item-in-box" key={index}>
+                    <input type="checkbox" id={index} name={index} value={activity} />
+                    <div className="item-in-box">
                       {activity}
                     </div>
-                  ))}
+                  </div>
+                ))}
                 </div>
               </div>
               <div className="inSecondContainerCenter">
