@@ -184,8 +184,12 @@ class ActivitiesV2 extends Component {
               </div>
             </div>
             <div className="text-align-end">
-              <button className="RedWoodButton">Ok</button>
-              <button className="RedWoodButton">Cancel</button>
+              <button className="RedWoodButton" onClick={() => {
+                document.getElementById("myModal").style.display = "none";
+              }}>Ok</button>
+              <button className="RedWoodButton" onClick={() => {
+                document.getElementById("myModal").style.display = "none";
+              }}>Cancel</button>
             </div>
           </div>
         </div>
