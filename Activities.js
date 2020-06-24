@@ -39,7 +39,7 @@ class Activities extends Component {
                 Cloud Coaching
               </td>
               <td>
-                <Link to="/mapper/1">
+                <Link to="/mapper-v3">
                   <button className="RedWoodButton">Edit</button>
                 </Link>
               </td>
@@ -49,7 +49,7 @@ class Activities extends Component {
               <td>Global</td>
               <td>Opty Pursuit Activity</td>
               <td>
-                <Link to="/mapper/2">
+                <Link to="/mapper-v3">
                   <button className="RedWoodButton">Edit</button>
                 </Link>
               </td>
@@ -75,7 +75,7 @@ class Activities extends Component {
                 <br />
               </td>
               <td>
-                <Link to="/mapper/3">
+                <Link to="/mapper-v3">
                   <button className="RedWoodButton">Edit</button>
                 </Link>
               </td>
