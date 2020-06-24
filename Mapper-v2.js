@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./mapper-v2.css";
 
-class Mapper extends Component {
+class MapperV2 extends Component {
   state = {
     activities: ["Day1 Onboarding", "Technical Support", "Cloud Coaching", "Opty Pursuit Activity", "Sales Play Workshop and Discovery", "Innovation Day", "Demonstration", "Proof of Concept", "Solution Proposal"],
     selectedActivities: [],
@@ -189,4 +189,4 @@ class Mapper extends Component {
   }
 }
 
-export default Mapper;
+export default MapperV2;

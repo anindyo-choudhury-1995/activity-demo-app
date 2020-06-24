@@ -9,6 +9,7 @@ import Activities from './Activities'
 import Dashboard from './Dashboard'
 import DashboardListing from './DashboardListing'
 import MapperV2 from './Mapper-v2'
+import MapperV3 from './Mapper-v3'
 import {
   BrowserRouter as Router,
   Switch,
@@ -23,6 +24,9 @@ class Body extends Component {
         <Switch>
         <Route path="/create">
           <Create />
+        </Route>
+        <Route path="/mapper-v3">
+          <MapperV3 />
         </Route>
         <Route path="/mapper/:id">
           <MapperV2 />
